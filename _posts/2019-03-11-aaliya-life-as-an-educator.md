@@ -8,7 +8,7 @@ permalink: /aaliya-life-as-an-educator/
 comment_count: 1
 ---
 
-[Aaliya's Life as an Educator](/assets/images/aaliya's life as an educator.jpg)
+![Aaliya's Life as an Educator](/assets/images/aaliya's life as an educator.jpg)
 
 ### **Welcome to Aliya's Life as an Educator**
 

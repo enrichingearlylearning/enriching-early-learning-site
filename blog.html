@@ -1,0 +1,47 @@
+---
+layout: default
+title: "Blog"
+permalink: /blog/
+---
+<div class="hero">
+  <h1>Welcome to our Blog Room!</h1>
+</div>
+
+<div class="content">
+  <p>The members of the Enriching Early Learning Community love to share their experience-based content, tips, and resources with all the parents and educators who are the primary role models in our young children's lives. Our blogs are categorized into three main sections based on different members of the community.</p>
+
+  {% assign categories_order = "Aaliya's Life as an Educator,Tanya and Tanmay's Corner,Cradle to Crayon" | split: "," %}
+
+  {% for cat_name in categories_order %}
+    {% assign posts_in_cat = site.categories[cat_name] %}
+    {% if posts_in_cat.size > 0 %}
+    <h2>{{ cat_name }}</h2>
+    <div class="blog-grid">
+      {% for post in posts_in_cat %}
+      <a class="blog-card" href="{{ post.url }}">
+        <div class="blog-card-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+        <div class="blog-card-title">{{ post.title }}</div>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  {% endfor %}
+
+  <h2>All posts</h2>
+  <div class="blog-grid">
+    {% for post in site.posts %}
+    <a class="blog-card" href="{{ post.url }}">
+      <div class="blog-card-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+      <div class="blog-card-title">{{ post.title }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin:20px 0 40px;}
+.blog-card{display:block;border:1px solid #EDEDED;border-radius:12px;padding:18px 20px;text-decoration:none;transition:border-color 0.2s,transform 0.2s;}
+.blog-card:hover{border-color:#76C5C9;transform:translateY(-2px);}
+.blog-card-date{font-size:12px;color:#999;margin-bottom:6px;}
+.blog-card-title{font-family:'ADLaM Display',sans-serif;color:#00676F;font-size:16px;line-height:1.4;}
+</style>

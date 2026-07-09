@@ -12,7 +12,8 @@ Container: 880px content, 1200px header/footer
 .container-wide{max-width:1200px;margin:0 auto;padding:0 32px;}
 
 header{display:flex;align-items:center;justify-content:space-between;padding:22px 32px;max-width:1200px;margin:0 auto;}
-.logo{font-family:'ADLaM Display',sans-serif;font-size:22px;color:#00676F;text-decoration:none;}
+.logo{font-family:'ADLaM Display',sans-serif;font-size:22px;color:#00676F;text-decoration:none;display:inline-flex;align-items:center;}
+.logo-img{height:60px;width:auto;display:block;}
 nav{display:flex;gap:28px;align-items:center;}
 nav a{font-size:15px;font-weight:600;color:#00676F;text-decoration:none;}
 .dropdown{position:relative;display:inline-block;}

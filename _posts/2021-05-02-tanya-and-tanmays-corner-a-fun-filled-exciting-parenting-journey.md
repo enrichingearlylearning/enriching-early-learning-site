@@ -9,7 +9,6 @@ comment_count: 0
 ---
 
 ![Tanya and Tanmay's Corner](/assets/images/tanya and tanmay.jpg)
-
 ### **WELCOME to Tanya and Tanmay's Corner**
 
 You must be wondering, what is Tanya and Tanmay's corner all about?

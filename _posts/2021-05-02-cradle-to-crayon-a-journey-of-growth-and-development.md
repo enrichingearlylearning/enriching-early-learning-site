@@ -8,7 +8,7 @@ permalink: /cradle-to-crayon-a-journey-of-growth-and-development/
 comment_count: 0
 ---
 
-![](https://www.enrichingearlylearning.com/wp-content/uploads/revslider/slider-3/61-1024x493.png)
+![]![Cradle to Crayon](/assets/images/cradle-to-crayon.jpg)
 
 ### We WELCOME you to our little world: Cradle to Crayon
 

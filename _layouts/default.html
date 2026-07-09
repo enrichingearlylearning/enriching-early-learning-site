@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} | Enriching Early Learning</title>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
+</head>
+<body>
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
+
+<script>
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
+    if (window.innerWidth < 900) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    }
+  });
+});
+</script>
+</body>
+</html>

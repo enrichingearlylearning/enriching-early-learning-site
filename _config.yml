@@ -7,10 +7,10 @@ permalink: /:title/
 # Comments (giscus) — fill these in AFTER the GitHub repo exists.
 # See setup instructions provided separately.
 giscus:
-  repo: "YOUR-GITHUB-USERNAME/YOUR-REPO-NAME"
-  repo_id: "FILL-AFTER-ENABLING-DISCUSSIONS"
+  repo: "enrichingearlylearning/enriching-early-learning-site"
+  repo_id: "R_kgDOTSwMBQ"
   category: "Comments"
-  category_id: "FILL-AFTER-ENABLING-DISCUSSIONS"
+  category_id: "DIC_kwDOTSwMBc4DA148"
 
 exclude:
   - README.md

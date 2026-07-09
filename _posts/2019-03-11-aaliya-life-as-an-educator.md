@@ -18,24 +18,24 @@ Aaliya has been working as an Educator for last 3 decades and has plenty of expe
 
 To read through her treasures, you got to come back here every week so that you do not miss out on these precious treasures.
 
-If there is anything specific you are looking for, you may leave a comment below the BLOG and we will try to get back on that in our next month’s Blog.
+If there is anything specific you are looking for, you may leave a comment below the BLOG and we will try to get back on that in our next month's Blog.
 
 Meanwhile feel free to browse through the blogs under category of Aliya's Life as an Educator:
 
-1. [5 ways to support self-regulation in preschoolers virtually](https://www.enrichingearlylearning.com/5-ways-to-support-self-regulation-in-preschoolers-virtually/)
-2. [Virtual Circle time: A strategy for teaching preschoolers online](https://www.enrichingearlylearning.com/virtual-circle-time-a-strategy-for-teaching-preschoolers-online/)
-3. [Virtual classroom backgrounds: 5 tips for a perfect look](https://www.enrichingearlylearning.com/virtual-classroom-backgrounds-5-tips-for-a-perfect-look/)
-4. [How to select correct trending tools for teaching preschoolers online?](https://www.enrichingearlylearning.com/how-to-select-correct-trending-tools-for-teaching-preschoolers-online/)  
-   [Managing behaviour in a virtual classroom: 5 amazing hacks](https://www.enrichingearlylearning.com/managing-behavior-in-a-virtual-classroom-5-amazing-hacks/)
-5. [Alphabet practice bundle: A new summer freebie for kids](https://www.enrichingearlylearning.com/alphabet-practice-bundle-the-new-summer-freebie-for-kids/)
-6. [Number practice bundle: A new freebie for you](https://www.enrichingearlylearning.com/number-practice-bundle-new-freebie-for-you/)
-7. [Sensory playdough: awesome benefits that you should know](https://www.enrichingearlylearning.com/awesome-benefits-of-play-dough/)
-8. [Astonishing benefits of read aloud sessions in ECE](https://www.enrichingearlylearning.com/astonishing-benefits-of-read-aloud-sessions-in-early-years/)
-9. [Classroom greetings](https://www.enrichingearlylearning.com/classroom-greetings-fun-way-to-greet-your-preschoolers/(opens in a new tab))
-10. [Advice for a new ECD teacher](https://www.enrichingearlylearning.com/advice-for-a-new-ecd-teacher/)
-11. [4 preschool portfolio hacks](https://www.enrichingearlylearning.com/4-preschool-portfolio-hacks/(opens in a new tab))
-12. [Everything about preschool Children's portfolios](https://www.enrichingearlylearning.com/everything-about-preschool-childrens-portfolios/(opens in a new tab))
-13. [5 behaviour management tips](https://www.enrichingearlylearning.com/5-behaviour-management-tips-every-educator-should-know/(opens in a new tab))
+<style>
+.link-card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:24px 0 32px;}
+.link-card{display:flex;align-items:center;gap:14px;padding:16px 18px;background:#fff;border:1px solid #EDEDED;border-radius:14px;text-decoration:none !important;transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s;}
+.link-card:hover{border-color:#76C5C9;transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,103,111,0.08);}
+.link-card-num{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:#E4F1F2;color:#00676F;font-weight:700;font-size:12.5px;display:flex;align-items:center;justify-content:center;}
+.link-card-title{font-size:14px;font-weight:600;color:#00676F;line-height:1.4;}
+</style>
+
+<div class="link-card-grid">
+{% assign cat_posts = site.categories["Aaliya's Life as an Educator"] | sort: 'date' %}
+{% assign i = 0 %}
+{% for post in cat_posts %}{% unless post.url == page.url %}{% assign i = i | plus: 1 %}<a class="link-card" href="{{ post.url }}"><span class="link-card-num">{{ i }}</span><span class="link-card-title">{{ post.title }}</span></a>
+{% endunless %}{% endfor %}
+</div>
 
 STAY TUNED FOR MORE UPDATES!!!
 

@@ -22,8 +22,17 @@ If you are parent or educator to young child and you are seeking any specific re
 
 Meanwhile you can read some of the blogs from this corner and learn something new today to implement with children at home or in the classroom:
 
-1. [Sensory song can make your sensory play more fun](https://www.enrichingearlylearning.com/sensory-song-makes-sensory-play-fun/)
-2. [Art is a form of expression](https://www.enrichingearlylearning.com/art-is-a-form-of-expression/)
-3. [Key cognitive milestones addressed by preschoolers](https://www.enrichingearlylearning.com/key-cognitive-milestone/)
-4. [Tummy time: Engaging with sensory basket](https://www.enrichingearlylearning.com/tummy-time-play-engaging-with-the-sensory-basket/)
-5. [Hop on the numbers: A developmental game](https://www.enrichingearlylearning.com/hop-on-numbers-a-developmental-game/)
+<style>
+.link-card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:24px 0 32px;}
+.link-card{display:flex;align-items:center;gap:14px;padding:16px 18px;background:#fff;border:1px solid #EDEDED;border-radius:14px;text-decoration:none !important;transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s;}
+.link-card:hover{border-color:#76C5C9;transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,103,111,0.08);}
+.link-card-num{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:#E4F1F2;color:#00676F;font-weight:700;font-size:12.5px;display:flex;align-items:center;justify-content:center;}
+.link-card-title{font-size:14px;font-weight:600;color:#00676F;line-height:1.4;}
+</style>
+
+<div class="link-card-grid">
+{% assign cat_posts = site.categories["Cradle to crayon"] | sort: 'date' %}
+{% assign i = 0 %}
+{% for post in cat_posts %}{% unless post.url == page.url %}{% assign i = i | plus: 1 %}<a class="link-card" href="{{ post.url }}"><span class="link-card-num">{{ i }}</span><span class="link-card-title">{{ post.title }}</span></a>
+{% endunless %}{% endfor %}
+</div>

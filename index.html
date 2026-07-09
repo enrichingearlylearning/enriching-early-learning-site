@@ -8,10 +8,8 @@ title: Home
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Enriching Early Learning</title>
-<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/main.css">
-
-<!-- Google Analytics -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-85P4ZN3TH3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -20,32 +18,22 @@ title: Home
   gtag('config', 'G-85P4ZN3TH3');
 </script>
 <style>
-.hero-split{display:flex;align-items:center;gap:60px;padding:40px 40px 80px;max-width:1200px;margin:0 auto;flex-wrap:wrap;}
-.hero-text{flex:1;min-width:280px;}
-.hero-img{flex:1;min-width:280px;text-align:center;}
-.hero-img img{max-width:100%;}
-.quote-pill{display:inline-block;background:#F1E4D1;color:#7A3B33;font-size:14px;font-weight:600;padding:9px 20px;border-radius:24px;margin-bottom:24px;}
-.hero-text h1{font-family:'ADLaM Display',sans-serif;color:#00676F;font-size:46px;line-height:1.2;margin:0 0 28px;}
-.btn{display:inline-block;background:#7A3B33;color:#fff;font-weight:700;font-size:15px;padding:16px 32px;border-radius:28px;text-decoration:none;}
-.vm-section{padding:60px 40px;max-width:1200px;margin:0 auto;}
-.vm-row{display:flex;align-items:center;gap:60px;margin-bottom:70px;flex-wrap:wrap;}
-.vm-row img{max-width:340px;flex-shrink:0;}
-.vm-text h2{font-family:'ADLaM Display',sans-serif;color:#00676F;font-size:38px;margin-bottom:22px;}
-.vm-text p{font-size:16px;line-height:1.7;color:#333;margin-bottom:20px;}
-.vm-text .cta-label{font-weight:700;font-size:16px;margin-bottom:16px;display:block;}
-.consult-row{display:flex;align-items:center;gap:50px;flex-wrap:wrap;}
-.consult-row img{max-width:480px;flex:1.2;}
-.consult-quote{flex:1;border-left:2px solid #1a1a1a;padding-left:28px;}
-.consult-quote p{font-size:18px;font-style:italic;line-height:1.6;color:#1a1a1a;margin-bottom:24px;}
-.testimonial{position:relative;background:#fff;padding:60px 80px;max-width:1200px;margin:0 auto;}
-.testimonial-card{border:1px solid #eee;border-radius:16px;padding:40px 48px;position:relative;}
-.quote-mark{font-size:48px;color:#3B6FD4;font-weight:700;line-height:1;margin-bottom:10px;}
-.stars{color:#F5B400;font-size:22px;letter-spacing:3px;margin-bottom:20px;}
-.testimonial-card p.quote-text{font-size:19px;line-height:1.6;color:#1a1a1a;margin-bottom:24px;max-width:760px;}
-.arrow{position:absolute;top:50%;transform:translateY(-50%);font-size:28px;color:#333;cursor:pointer;}
-.arrow.left{left:20px;}
-.arrow.right{right:20px;}
-.dots{display:flex;justify-content:center;gap:10px;margin:30px 0 50px;}
+.home-hero-flex{display:flex;align-items:center;gap:48px;flex-wrap:wrap;text-align:left;}
+.home-hero-flex .hero-text{flex:1;min-width:260px;}
+.home-hero-flex .hero-img{flex:1;min-width:220px;text-align:center;}
+.home-hero-flex .hero-img img{max-width:100%;position:relative;z-index:2;}
+.vm-row{display:flex;align-items:center;gap:48px;flex-wrap:wrap;margin-bottom:48px;}
+.vm-row img{max-width:280px;flex-shrink:0;border-radius:16px;}
+.vm-row.reverse{flex-direction:row-reverse;}
+.testimonial-wrap{position:relative;padding:20px 60px 0;}
+.testimonial-card{border:1px solid #EDEDED;border-radius:16px;padding:36px 40px;}
+.quote-mark{font-size:40px;color:#3B6FD4;font-weight:700;line-height:1;margin-bottom:8px;}
+.stars{color:#F5B400;font-size:20px;letter-spacing:3px;margin-bottom:16px;}
+.testimonial-card .quote-text{font-size:16px;line-height:1.6;color:#1a1a1a;margin-bottom:20px;}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);font-size:26px;color:#333;cursor:pointer;}
+.arrow.left{left:16px;}
+.arrow.right{right:16px;}
+.dots{display:flex;justify-content:center;gap:10px;margin:24px 0 40px;}
 .dot{width:9px;height:9px;border-radius:50%;background:#D6D9F0;cursor:pointer;}
 .dot.active{background:#3B4FBF;}
 </style>
@@ -54,50 +42,63 @@ title: Home
 
 {% include header.html %}
 
-<section class="hero-split">
-  <div class="hero-text">
-    <span class="quote-pill">"It takes a village to raise a child"</span>
-    <h1>Meet our Community</h1>
-    <a class="btn" href="/about/">Enriching Early Learning Community</a>
+<div class="hero">
+  <div class="hero-blob"></div>
+  <div class="hero-inner">
+    <div class="home-hero-flex">
+      <div class="hero-text">
+        <span class="quote-pill">"It takes a village to raise a child"</span>
+        <h1 style="text-align:left;margin:0 0 20px;">Meet our community</h1>
+        <a class="btn" href="/about/">Enriching Early Learning Community</a>
+      </div>
+      <div class="hero-img">
+        <img src="/assets/images/family-illustration.png" alt="Enriching Early Learning community family illustration">
+      </div>
+    </div>
   </div>
-  <div class="hero-img">
-    <img src="/assets/images/family-illustration.png" alt="Enriching Early Learning community family illustration">
-  </div>
-</section>
+</div>
 
-<section class="vm-section">
+<div class="content">
+
+  <div class="badge-divider">
+    <img src="/assets/images/community-logo.png" alt="">
+    <div class="line"></div>
+    <span class="label">Our story</span>
+  </div>
+
   <div class="vm-row">
-    <img src="/assets/images/community-logo.png" alt="Enriching Early Learning Community logo">
-    <div class="vm-text">
-      <h2>Vision and Mission</h2>
+    <img src="/assets/images/coaching-group.png" alt="Coaching consultation group illustration">
+    <div>
+      <h2 style="margin-top:0;">Vision and mission</h2>
       <p>At Enriching Early Learning, we empower educators and parents to build inclusive environments where every child can thrive.</p>
       <p>Through our virtual community, we bring together educators, parents, and caregivers to share knowledge, stories, and support—reflecting the strength of a real-world village raising children together.</p>
-      <span class="cta-label">📍 Want to know more?</span>
       <a class="btn" href="/about/">Read our story</a>
     </div>
   </div>
 
-  <div class="consult-row">
-    <img src="/assets/images/coaching-group.png" alt="Coaching consultation group illustration">
-    <div class="consult-quote">
-      <p>"We offer expert consultation, coaching, and professional development rooted in inclusive practices. Let's work together to create high-quality, supportive learning environments where every child thrives. Schedule a free consultation today."</p>
-      <a class="btn" href="/contact/">Free Consultation</a>
+  <div class="badge-banner">
+    <img src="/assets/images/community-logo.png" alt="">
+    <div>
+      <div class="banner-title">Expert consultation, coaching, and professional development</div>
+      <div class="banner-text">Rooted in inclusive practices. Let's work together to create high-quality, supportive learning environments where every child thrives.</div>
     </div>
+    <a class="btn" href="/contact/" style="margin-left:auto;">Free consultation</a>
   </div>
-</section>
 
-<section class="testimonial">
-  <span class="arrow left" onclick="changeTestimonial(-1)">‹</span>
-  <div class="testimonial-card">
-    <div class="quote-mark">"</div>
-    <div class="stars">★★★★★</div>
-    <p class="quote-text" id="testimonial-text"></p>
-    <p id="testimonial-name" style="font-size:16px;"></p>
-    <p id="testimonial-role" style="font-size:16px;color:#666;"></p>
+  <div class="testimonial-wrap">
+    <span class="arrow left" onclick="changeTestimonial(-1)">‹</span>
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <div class="stars">★★★★★</div>
+      <p class="quote-text" id="testimonial-text"></p>
+      <p id="testimonial-name" style="font-weight:600;font-size:14px;"></p>
+      <p id="testimonial-role" style="font-size:13px;color:#888;"></p>
+    </div>
+    <span class="arrow right" onclick="changeTestimonial(1)">›</span>
+    <div class="dots" id="testimonial-dots"></div>
   </div>
-  <span class="arrow right" onclick="changeTestimonial(1)">›</span>
-  <div class="dots" id="testimonial-dots"></div>
-</section>
+
+</div>
 
 {% include footer.html %}
 
@@ -122,22 +123,13 @@ function renderTestimonial() {
     `<span class="dot ${i === current ? 'active' : ''}" onclick="goToTestimonial(${i})"></span>`
   ).join('');
 }
-function changeTestimonial(dir) {
-  current = (current + dir + testimonials.length) % testimonials.length;
-  renderTestimonial();
-}
-function goToTestimonial(i) {
-  current = i;
-  renderTestimonial();
-}
+function changeTestimonial(dir) { current = (current + dir + testimonials.length) % testimonials.length; renderTestimonial(); }
+function goToTestimonial(i) { current = i; renderTestimonial(); }
 renderTestimonial();
 
 document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
   toggle.addEventListener('click', function(e) {
-    if (window.innerWidth < 900) {
-      e.preventDefault();
-      this.parentElement.classList.toggle('open');
-    }
+    if (window.innerWidth < 900) { e.preventDefault(); this.parentElement.classList.toggle('open'); }
   });
 });
 </script>

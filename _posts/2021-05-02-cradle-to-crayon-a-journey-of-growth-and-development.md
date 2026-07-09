@@ -8,7 +8,7 @@ permalink: /cradle-to-crayon-a-journey-of-growth-and-development/
 comment_count: 0
 ---
 
-![]![Cradle to Crayon](/assets/images/Cradle-to-crayon.jpg)
+[Cradle to Crayon](/assets/images/Cradle-to-crayon.jpg)
 
 ### We WELCOME you to our little world: Cradle to Crayon
 

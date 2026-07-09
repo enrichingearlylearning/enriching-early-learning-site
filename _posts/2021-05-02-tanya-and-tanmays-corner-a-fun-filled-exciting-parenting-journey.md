@@ -8,7 +8,7 @@ permalink: /tanya-and-tanmays-corner-a-fun-filled-exciting-parenting-journey/
 comment_count: 0
 ---
 
-![Tanya and Tanmay's Corner](https://www.enrichingearlylearning.com/wp-content/uploads/revslider/slider-3/51-1024x493.png)
+!![Tanya and Tanmay's Corner](/assets/images/tanya and tanmay.jpg)
 
 ### **WELCOME to Tanya and Tanmay's Corner**
 

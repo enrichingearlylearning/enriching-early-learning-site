@@ -8,7 +8,7 @@ permalink: /aaliya-life-as-an-educator/
 comment_count: 1
 ---
 
-![](https://www.enrichingearlylearning.com/wp-content/uploads/revslider/slider-3/eNRICHING-eARLY-lEARNING-cOMMUNITY-1-1024x493.png)
+![]![Aaliya's Life as an Educator](/assets/images/aaliya's life as an educator.jpg)
 
 ### **Welcome to Aliya's Life as an Educator**
 

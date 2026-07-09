@@ -1,0 +1,255 @@
+---
+layout: null
+title: "ELL Coaching and Mentorship form"
+permalink: /ell-coaching-and-mentorship-form/
+---
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>ELL Coaching and Mentorship form</title><style>
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Inter:wght@400;500;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff;}
+.wrap{max-width:760px;margin:0 auto;}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid #EDEDED;}
+.logo{font-family:'ADLaM Display',sans-serif;font-size:22px;color:#00676F;text-decoration:none;}
+nav a{margin-left:24px;font-size:14px;font-weight:500;color:#333;text-decoration:none;}
+.hero{background:#00676F;padding:56px 40px 48px;text-align:center;}
+.hero h1{font-family:'ADLaM Display',sans-serif;color:#fff;font-size:32px;line-height:1.3;max-width:600px;margin:0 auto;}
+.content{padding:40px;}
+.content p{font-size:15.5px;line-height:1.75;color:#3a3a3a;margin-bottom:16px;}
+.content img{max-width:100%;border-radius:10px;margin:20px 0;display:block;}
+.content h2{font-family:'ADLaM Display',sans-serif;color:#EB776A;font-size:24px;margin:32px 0 14px;}
+.content h3{font-family:'ADLaM Display',sans-serif;color:#00676F;font-size:19px;margin:24px 0 10px;}
+.content h4,.content h6{font-family:'Inter',sans-serif;color:#00676F;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:0.4px;margin:20px 0 8px;}
+.content ol,.content ul{margin:0 0 16px 4px;color:#3a3a3a;font-size:15px;line-height:1.9;list-style:none;}
+.content ul li{padding-left:24px;position:relative;margin-bottom:6px;}
+.content ul li:before{content:"✓";position:absolute;left:0;color:#00676F;font-weight:700;}
+.content ol{margin-left:20px;list-style:decimal;}
+.content a{color:#00676F;}
+.sublabel{font-weight:600;color:#00676F;font-size:14.5px;display:block;margin:14px 0 4px;}
+.quote{border-left:3px solid #76C5C9;padding:12px 18px;margin:20px 0;background:#F7FBFB;border-radius:0 8px 8px 0;}
+.quote p{font-style:italic;color:#555;margin:0;}
+.divider{border:none;border-top:1px solid #EDEDED;margin:32px 0;}
+.cta-btn{display:inline-flex;align-items:center;gap:6px;background:#EB776A;color:#fff !important;font-weight:600;font-size:14px;padding:11px 24px;border-radius:22px;text-decoration:none;margin:8px 6px 8px 0;}
+footer{background:#008E97;padding:40px 40px 24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:28px;}
+footer h4{font-family:'ADLaM Display',sans-serif;color:#fff;font-size:16px;margin-bottom:12px;text-transform:none;letter-spacing:0;}
+footer p{color:#CDE9EA;font-size:13px;margin-bottom:6px;}
+.copyright{background:#00676F;text-align:center;padding:14px;font-size:12px;color:#BFDDDE;}
+.pd-form{max-width:600px;margin:0 auto;}
+.pd-form .intro{font-style:italic;color:#3a3a3a;margin-bottom:28px;font-size:15.5px;line-height:1.75;}
+.field{margin-bottom:22px;}
+.field label{display:block;font-weight:600;font-size:14.5px;color:#00676F;margin-bottom:6px;}
+.field label .req{color:#EB776A;margin-left:2px;}
+.field input[type=text],.field input[type=email],.field input[type=tel],.field select,.field textarea{
+  width:100%;padding:12px 14px;border:1px solid #D8E4E4;border-radius:10px;font-family:'Inter',sans-serif;
+  font-size:15px;color:#1a1a1a;background:#F7FBFB;}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:#76C5C9;background:#fff;}
+.field textarea{resize:vertical;min-height:90px;}
+.row-2{display:flex;gap:16px;flex-wrap:wrap;}
+.row-2 .field{flex:1 1 240px;}
+.checkbox-group{display:flex;flex-direction:column;gap:8px;margin-top:4px;}
+.checkbox-group label{display:flex;align-items:center;gap:10px;font-weight:500;font-size:15px;color:#3a3a3a;cursor:pointer;}
+.checkbox-group input[type=checkbox]{width:18px;height:18px;accent-color:#00676F;cursor:pointer;flex-shrink:0;}
+.other-field{margin-top:10px;}
+.submit-btn{background:#EB776A;color:#fff;font-weight:600;font-size:15px;padding:13px 32px;border-radius:22px;
+  border:none;cursor:pointer;font-family:'Inter',sans-serif;}
+.submit-btn:hover{background:#d9614f;}
+.form-status{margin-top:14px;font-size:14px;font-weight:600;}
+.form-status.success{color:#00676F;}
+.form-status.error{color:#EB776A;}
+
+.dropdown{position:relative;display:inline-block;}
+.dropdown-toggle{display:flex;align-items:center;gap:4px;}
+.dropdown-menu{display:none;position:absolute;top:130%;left:0;background:#fff;border:1px solid #eee;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,0.08);min-width:240px;padding:8px;z-index:10;}
+.dropdown-menu a{display:block;padding:10px 14px;font-size:14px;font-weight:500;color:#333;border-radius:6px;white-space:nowrap;text-decoration:none;}
+.dropdown-menu a:hover{background:#F1E4D1;color:#00676F;}
+.dropdown.open .dropdown-menu,.dropdown:hover .dropdown-menu{display:block;}
+.social-row{display:flex;justify-content:center;gap:16px;padding:24px 0;max-width:1200px;margin:0 auto;}
+.social-circle{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;transition:opacity 0.2s;}
+.social-circle:hover{opacity:0.85;}
+</style></head><body>
+<div class="wrap"><header>
+  <a class="logo" href="/">Enriching Early Learning</a>
+  <nav>
+    <a href="/about/">About Us</a>
+    <div class="dropdown">
+      <a href="/blog/" class="dropdown-toggle">Blog <i class="ti ti-chevron-down" style="font-size:13px;"></i></a>
+      <div class="dropdown-menu">
+        <a href="/aaliya-life-as-an-educator/">Aaliya's Life as an Educator</a>
+        <a href="/cradle-to-crayon-a-journey-of-growth-and-development/">Cradle to Crayon</a>
+        <a href="/tanya-and-tanmays-corner-a-fun-filled-exciting-parenting-journey/">Tanya and Tanmay's Corner</a>
+      </div>
+    </div>
+    <a href="/free-resource-room/">Free Resources</a>
+    <div class="dropdown">
+      <a href="/services/" class="dropdown-toggle">Services <i class="ti ti-chevron-down" style="font-size:13px;"></i></a>
+      <div class="dropdown-menu">
+        <a href="/the-belonging-hub/">Services for Families: The Belonging Hub</a>
+        <a href="/services-for-child-care-centers/">Services for Childcare Centers</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="hero"><h1>ELL Coaching and Mentorship form</h1></div>
+<div class="content">
+<form class="pd-form" id="coachForm" action="https://formspree.io/f/xzdllvar" method="POST">
+<p class="intro">Coaching with Enriching Early Learning is grounded in evidence-based practices, a unique partnership, and reflection based approach. Your responses here help us understand your goals and whether this support is the right fit.</p>
+
+<div class="field">
+<label for="fullName">Full name<span class="req">*</span></label>
+<input type="text" id="fullName" name="Full Name" required>
+</div>
+
+<div class="field">
+<label for="email">Email<span class="req">*</span></label>
+<input type="email" id="email" name="Email" required>
+</div>
+
+<div class="field">
+<label for="phone">Phone number<span class="req">*</span></label>
+<input type="tel" id="phone" name="Phone Number" required>
+</div>
+
+<div class="row-2">
+<div class="field">
+<label for="company">Company name<span class="req">*</span></label>
+<input type="text" id="company" name="Company Name" required>
+</div>
+<div class="field">
+<label for="location">Location (City, State/Province, Country)<span class="req">*</span></label>
+<input type="text" id="location" name="Location" required>
+</div>
+</div>
+
+<div class="field">
+<label for="format">Coaching Format<span class="req">*</span></label>
+<select id="format" name="Coaching Format" required>
+<option value="" selected disabled>Please Select</option>
+<option value="1:1 Virtual Coaching">1:1 Virtual Coaching</option>
+<option value="1:1 In-Person Coaching">1:1 In-Person Coaching</option>
+<option value="Group/Team Coaching">Group/Team Coaching</option>
+<option value="Not sure yet">Not sure yet</option>
+</select>
+</div>
+
+<div class="field">
+<label>Who will be participating?<span class="req">*</span></label>
+<div class="checkbox-group">
+<label><input type="checkbox" name="Participants" value="You (Educator)"> You (Educator)</label>
+<label><input type="checkbox" name="Participants" value="My co-educator"> My co-educator</label>
+<label><input type="checkbox" name="Participants" value="My Supervisor/Director"> My Supervisor/Director</label>
+</div>
+</div>
+
+<div class="field">
+<label>What would you most like support with in coaching? (Select all that apply)<span class="req">*</span></label>
+<div class="checkbox-group">
+<label><input type="checkbox" name="Coaching Support Areas" value="Strengthening inclusion for children with diverse needs"> Strengthening inclusion for children with diverse needs</label>
+<label><input type="checkbox" name="Coaching Support Areas" value="Supporting educator wellbeing and burnout"> Supporting educator wellbeing and burnout</label>
+<label><input type="checkbox" name="Coaching Support Areas" value="Partnering with families more effectively"> Partnering with families more effectively</label>
+<label><input type="checkbox" name="Coaching Support Areas" value="Improving communication and collaboration on my team"> Improving communication and collaboration on my team</label>
+<label><input type="checkbox" name="Coaching Support Areas" value="Other"> Other</label>
+</div>
+<div class="field other-field">
+<label for="supportOther">If Other, Please specify:</label>
+<textarea id="supportOther" name="Coaching Support Areas - Other"></textarea>
+</div>
+</div>
+
+<div class="field">
+<label for="seeking">Are you seeking:<span class="req">*</span></label>
+<select id="seeking" name="Seeking" required>
+<option value="" selected disabled>Please Select</option>
+<option value="Ongoing coaching (multiple sessions)">Ongoing coaching (multiple sessions)</option>
+<option value="A single consultation">A single consultation</option>
+<option value="Not sure yet">Not sure yet</option>
+</select>
+</div>
+
+<div class="field">
+<label for="budget">Which budget range best aligns with what you are able to invest in coaching right now?<span class="req">*</span></label>
+<select id="budget" name="Budget" required>
+<option value="" selected disabled>Please Select</option>
+<option value="Under $500">Under $500</option>
+<option value="$500 - $1,000">$500 - $1,000</option>
+<option value="$1,000 - $2,500">$1,000 - $2,500</option>
+<option value="$2,500 - $5,000">$2,500 - $5,000</option>
+<option value="$5,000+">$5,000+</option>
+<option value="Not sure yet">Not sure yet</option>
+</select>
+</div>
+
+<div class="field">
+<label for="startDate">When would like to ideally begin?<span class="req">*</span></label>
+<textarea id="startDate" name="Ideal Start Timing" required></textarea>
+</div>
+
+<div class="field">
+<label for="goals">Is there anything else you'd like us to know about your needs, vision, or goals?<span class="req">*</span></label>
+<textarea id="goals" name="Needs, Vision, Goals" required></textarea>
+</div>
+
+<div class="field">
+<label>Where did you hear about us?<span class="req">*</span></label>
+<div class="checkbox-group">
+<label><input type="checkbox" name="Heard About Us" value="Social Media (Instagram, Facebook)"> Social Media (Instagram, Facebook)</label>
+<label><input type="checkbox" name="Heard About Us" value="LinkedIn"> LinkedIn</label>
+<label><input type="checkbox" name="Heard About Us" value="Email"> Email</label>
+<label><input type="checkbox" name="Heard About Us" value="Word of mouth"> Word of mouth</label>
+<label><input type="checkbox" name="Heard About Us" value="Other"> Other</label>
+</div>
+<div class="field other-field">
+<label for="heardOther">If Others, Please Specify:</label>
+<textarea id="heardOther" name="Heard About Us - Other"></textarea>
+</div>
+</div>
+
+<input type="hidden" name="_subject" value="New ELL Coaching and Mentorship Inquiry">
+<button type="submit" class="submit-btn">Submit</button>
+<p class="form-status" id="formStatus"></p>
+</form>
+</div>
+
+<script>
+document.getElementById('coachForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var form = e.target;
+  var status = document.getElementById('formStatus');
+  var data = new FormData(form);
+  fetch(form.action, {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  }).then(function(response){
+    if (response.ok) {
+      status.textContent = "Thanks! We've received your request and will be in touch soon.";
+      status.className = 'form-status success';
+      form.reset();
+    } else {
+      status.textContent = "Something went wrong. Please try again or email us directly.";
+      status.className = 'form-status error';
+    }
+  }).catch(function(){
+    status.textContent = "Something went wrong. Please try again or email us directly.";
+    status.className = 'form-status error';
+  });
+});
+</script>
+<footer>
+<div><h4>Contact us</h4><p>enrichingearlylearning@gmail.com</p><p>+1 (514) 550-8176</p></div>
+<div><h4>Our services</h4><p>Book a service</p><p>Custom lesson plans</p></div>
+<div><h4>Information</h4><p>FAQs</p><p>Terms and conditions</p></div>
+</footer><div class="social-row">
+  <a class="social-circle" style="background:#1877F2;" href="https://www.facebook.com/enrichingearlylearning/" target="_blank" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+  <a class="social-circle" style="background:#E1306C;" href="https://www.instagram.com/enrichingearlylearning" target="_blank" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.14.57 1.64 1.07.5.5.81.98 1.07 1.64.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43-.26.66-.57 1.14-1.07 1.64-.5.5-.98.81-1.64 1.07-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47-.66-.26-1.14-.57-1.64-1.07-.5-.5-.81-.98-1.07-1.64-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.57-1.14 1.07-1.64.5-.5.98-.81 1.64-1.07.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.28 2 12 2zm0 1.8c-2.67 0-2.99.01-4.04.06-.97.04-1.5.2-1.85.34-.46.18-.79.4-1.14.75-.35.35-.57.68-.75 1.14-.14.35-.3.88-.34 1.85C3.83 9.01 3.82 9.33 3.82 12s.01 2.99.06 4.04c.04.97.2 1.5.34 1.85.18.46.4.79.75 1.14.35.35.68.57 1.14.75.35.14.88.3 1.85.34 1.05.05 1.37.06 4.04.06s2.99-.01 4.04-.06c.97-.04 1.5-.2 1.85-.34.46-.18.79-.4 1.14-.75.35-.35.57-.68.75-1.14.14-.35.3-.88.34-1.85.05-1.05.06-1.37.06-4.04s-.01-2.99-.06-4.04c-.04-.97-.2-1.5-.34-1.85-.18-.46-.4-.79-.75-1.14-.35-.35-.68-.57-1.14-.75-.35-.14-.88-.3-1.85-.34C14.99 3.83 14.67 3.82 12 3.82zm0 3.06a5.12 5.12 0 110 10.24 5.12 5.12 0 010-10.24zm0 1.8a3.32 3.32 0 100 6.64 3.32 3.32 0 000-6.64zm5.4-3.4a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg></a>
+  <a class="social-circle" style="background:#0A66C2;" href="https://www.linkedin.com/company/enriching-early-learning/" target="_blank" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+  <a class="social-circle" style="background:#25D366;" href="https://api.whatsapp.com/send/?phone=15145508176&text&type=phone_number&app_absent=0" target="_blank" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.09-1.53a9.86 9.86 0 004.95 1.33c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.6 0-3.11-.44-4.42-1.23l-.32-.19-3.29.99.99-3.2-.21-.33a8.18 8.18 0 01-1.26-4.38c0-4.53 3.68-8.21 8.21-8.21 4.53 0 8.21 3.68 8.21 8.21s-3.68 8.34-8.21 8.34zm4.5-6.15c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.24-.64.8-.78.97-.14.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.12-.12.27-.31.4-.47.13-.16.17-.27.26-.45.08-.18.04-.33-.04-.46-.08-.13-.53-1.28-.73-1.75-.19-.46-.39-.4-.54-.4-.14 0-.31-.01-.47-.01-.16 0-.42.06-.65.31-.22.25-.86.84-.86 2.04s.88 2.37 1 2.53c.13.17 1.72 2.63 4.17 3.58 2.45.95 2.45.63 2.89.6.44-.04 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.1-.23-.16-.48-.28z"/></svg></a>
+  <a class="social-circle" style="background:#888;" href="mailto:arzoo@enrichingearlylearning.com" aria-label="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M2 4h20v16H2V4zm2 2v.01L12 12l8-5.99V6H4zm16 2.24l-7.42 5.57a1 1 0 01-1.16 0L4 8.24V18h16V8.24z"/></svg></a>
+</div><div class="copyright">© 2018-2026 Enriching Early Learning. All rights reserved.</div></div><script>
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
+    if (window.innerWidth < 900) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    }
+  });
+});
+</script></body></html>

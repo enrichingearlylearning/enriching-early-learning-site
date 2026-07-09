@@ -1,0 +1,16 @@
+title: Enriching Early Learning
+description: Early childhood education, SEL programs, and parenting resources
+url: "https://www.enrichingearlylearning.com"
+markdown: kramdown
+permalink: /:title/
+
+# Comments (giscus) — fill these in AFTER the GitHub repo exists.
+# See setup instructions provided separately.
+giscus:
+  repo: "YOUR-GITHUB-USERNAME/YOUR-REPO-NAME"
+  repo_id: "FILL-AFTER-ENABLING-DISCUSSIONS"
+  category: "Comments"
+  category_id: "FILL-AFTER-ENABLING-DISCUSSIONS"
+
+exclude:
+  - README.md

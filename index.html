@@ -18,24 +18,47 @@ title: Home
   gtag('config', 'G-85P4ZN3TH3');
 </script>
 <style>
-.home-hero-flex{display:flex;align-items:center;gap:48px;flex-wrap:wrap;text-align:left;}
-.home-hero-flex .hero-text{flex:1;min-width:260px;}
-.home-hero-flex .hero-img{flex:1;min-width:220px;text-align:center;}
-.home-hero-flex .hero-img img{max-width:100%;position:relative;z-index:2;}
-.vm-row{display:flex;align-items:center;gap:48px;flex-wrap:wrap;margin-bottom:48px;}
-.vm-row img{max-width:280px;flex-shrink:0;border-radius:16px;}
+/* ===== Home page: hero ===== */
+.hero{position:relative;background:#00676F;padding:26px 32px 0;overflow:hidden;}
+.hero-inner{position:relative;z-index:1;max-width:880px;margin:0 auto;}
+.hero-flex{display:flex;align-items:center;gap:48px;flex-wrap:wrap;text-align:left;}
+.hero-text{flex:1 1 320px;min-width:280px;}
+.hero-img{flex:1 1 280px;min-width:240px;text-align:center;align-self:flex-end;}
+.hero-img img{max-width:320px;width:100%;display:block;margin:0 auto;position:relative;z-index:2;}
+
+/* ===== Home page: section rhythm ===== */
+.home-section{padding:72px 32px;}
+.home-section.tint{background:#F7FBFB;}
+.home-section-inner{max-width:880px;margin:0 auto;}
+.home-section-title{text-align:center;margin-bottom:48px;}
+.home-section-title h2{margin:0;}
+
+/* ===== Home page: alternating image/text rows ===== */
+.vm-row{display:flex;align-items:center;gap:56px;flex-wrap:wrap;}
 .vm-row.reverse{flex-direction:row-reverse;}
-.testimonial-wrap{position:relative;padding:20px 60px 0;}
-.testimonial-card{border:1px solid #EDEDED;border-radius:16px;padding:36px 40px;}
+.vm-row img{max-width:300px;width:100%;flex-shrink:0;border-radius:16px;}
+.vm-row .vm-text{flex:1 1 320px;min-width:280px;}
+.vm-row .vm-text h2{margin:0 0 16px;}
+.vm-row .vm-text p{font-size:15.5px;line-height:1.75;color:#3a3a3a;margin-bottom:16px;}
+.vm-row .mirror-img{transform:scaleX(-1);}
+
+/* ===== Home page: testimonials ===== */
+.testimonial-wrap{position:relative;padding:0 60px;max-width:820px;margin:0 auto;}
+.testimonial-card{border:1px solid #EDEDED;border-radius:16px;padding:36px 40px;background:#fff;}
 .quote-mark{font-size:40px;color:#3B6FD4;font-weight:700;line-height:1;margin-bottom:8px;}
 .stars{color:#F5B400;font-size:20px;letter-spacing:3px;margin-bottom:16px;}
 .testimonial-card .quote-text{font-size:16px;line-height:1.6;color:#1a1a1a;margin-bottom:20px;}
-.arrow{position:absolute;top:50%;transform:translateY(-50%);font-size:26px;color:#333;cursor:pointer;}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);font-size:26px;color:#333;cursor:pointer;user-select:none;}
 .arrow.left{left:16px;}
 .arrow.right{right:16px;}
-.dots{display:flex;justify-content:center;gap:10px;margin:24px 0 40px;}
+.dots{display:flex;justify-content:center;gap:10px;margin:24px 0 0;}
 .dot{width:9px;height:9px;border-radius:50%;background:#D6D9F0;cursor:pointer;}
 .dot.active{background:#3B4FBF;}
+
+@media (max-width: 640px){
+  .hero{padding:20px 20px 0;}
+  .home-section{padding:52px 20px;}
+}
 </style>
 </head>
 <body>
@@ -45,10 +68,10 @@ title: Home
 <div class="hero">
   <div class="hero-blob"></div>
   <div class="hero-inner">
-    <div class="home-hero-flex">
+    <div class="hero-flex">
       <div class="hero-text">
         <span class="quote-pill">"It takes a village to raise a child"</span>
-        <h1 style="text-align:left;margin:0 0 20px;">Meet our community</h1>
+        <h1>Meet our community</h1>
         <a class="btn" href="/about/">Enriching Early Learning Community</a>
       </div>
       <div class="hero-img">
@@ -58,46 +81,53 @@ title: Home
   </div>
 </div>
 
-<div class="content">
+<div class="home-section">
+  <div class="home-section-inner">
+    <div class="home-section-title">
+      <h2>Building a village, together</h2>
+    </div>
 
-  <div class="badge-divider">
-    <img src="/assets/images/community-logo.png" alt="">
-    <div class="line"></div>
-    <span class="label">Our story</span>
-  </div>
+    <div class="vm-row">
+      <img src="/assets/images/community-logo.png" alt="Enriching Early Learning Community logo">
+      <div class="vm-text">
+        <h2 style="margin-top:0;">Vision and mission</h2>
+        <p>At Enriching Early Learning, we empower educators and parents to build inclusive environments where every child can thrive.</p>
+        <p>Through our virtual community, we bring together educators, parents, and caregivers to share knowledge, stories, and support—reflecting the strength of a real-world village raising children together.</p>
+        <a class="btn" href="/about/">Read our story</a>
+      </div>
+    </div>
 
-  <div class="vm-row">
-    <img src="/assets/images/coaching-group.png" alt="Coaching consultation group illustration">
-    <div>
-      <h2 style="margin-top:0;">Vision and mission</h2>
-      <p>At Enriching Early Learning, we empower educators and parents to build inclusive environments where every child can thrive.</p>
-      <p>Through our virtual community, we bring together educators, parents, and caregivers to share knowledge, stories, and support—reflecting the strength of a real-world village raising children together.</p>
-      <a class="btn" href="/about/">Read our story</a>
+    <div style="height:56px;"></div>
+
+    <div class="vm-row reverse">
+      <img src="/assets/images/coaching-group.png" alt="Expert consultation and coaching illustration" class="mirror-img">
+      <div class="vm-text">
+        <h2 style="margin-top:0;">Expert consultation, coaching, and professional development</h2>
+        <p>Rooted in inclusive practices. Let's work together to create high-quality, supportive learning environments where every child thrives.</p>
+        <a class="btn" href="/contact/">Free consultation</a>
+      </div>
     </div>
   </div>
+</div>
 
-  <div class="badge-banner">
-    <img src="/assets/images/community-logo.png" alt="">
-    <div>
-      <div class="banner-title">Expert consultation, coaching, and professional development</div>
-      <div class="banner-text">Rooted in inclusive practices. Let's work together to create high-quality, supportive learning environments where every child thrives.</div>
+<div class="home-section tint">
+  <div class="home-section-inner">
+    <div class="home-section-title">
+      <h2>What families and educators are saying</h2>
     </div>
-    <a class="btn" href="/contact/" style="margin-left:auto;">Free consultation</a>
-  </div>
-
-  <div class="testimonial-wrap">
-    <span class="arrow left" onclick="changeTestimonial(-1)">‹</span>
-    <div class="testimonial-card">
-      <div class="quote-mark">"</div>
-      <div class="stars">★★★★★</div>
-      <p class="quote-text" id="testimonial-text"></p>
-      <p id="testimonial-name" style="font-weight:600;font-size:14px;"></p>
-      <p id="testimonial-role" style="font-size:13px;color:#888;"></p>
+    <div class="testimonial-wrap">
+      <span class="arrow left" onclick="changeTestimonial(-1)">‹</span>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="quote-text" id="testimonial-text"></p>
+        <p id="testimonial-name" style="font-weight:600;font-size:14px;"></p>
+        <p id="testimonial-role" style="font-size:13px;color:#888;"></p>
+      </div>
+      <span class="arrow right" onclick="changeTestimonial(1)">›</span>
+      <div class="dots" id="testimonial-dots"></div>
     </div>
-    <span class="arrow right" onclick="changeTestimonial(1)">›</span>
-    <div class="dots" id="testimonial-dots"></div>
   </div>
-
 </div>
 
 {% include footer.html %}

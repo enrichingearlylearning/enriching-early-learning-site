@@ -2,8 +2,11 @@
 layout: default
 ---
 <div class="hero">
-  <span class="eyebrow">{% if page.categories.size > 0 %}{{ page.categories[0] }}{% else %}BLOG{% endif %}</span>
-  <h1>{{ page.title }}</h1>
+  <div class="hero-blob"></div>
+  <div class="hero-inner">
+    <span class="eyebrow on-dark">{% if page.categories.size > 0 %}{{ page.categories[0] }}{% else %}BLOG{% endif %}</span>
+    <h1>{{ page.title }}</h1>
+  </div>
 </div>
 
 <div class="content">
@@ -12,6 +15,12 @@ layout: default
     {% for tag in page.tags %}<span class="pill tag">{{ tag }}</span>{% endfor %}
   </div>
   {{ content }}
+
+  <div class="badge-divider">
+    <img src="/assets/images/community-logo.png" alt="">
+    <div class="line"></div>
+    <span class="label">Enriching Early Learning Community</span>
+  </div>
 </div>
 
 {% assign post_slug = page.permalink | remove_first: '/' | remove: '/' %}
@@ -31,7 +40,7 @@ layout: default
 {% endif %}
 
 <div class="giscus-wrapper">
-  <h3 style="font-family:'ADLaM Display',sans-serif;color:#00676F;font-size:20px;margin-bottom:16px;">Leave a new comment</h3>
+  <h3>Leave a new comment</h3>
   <script src="https://giscus.app/client.js"
     data-repo="{{ site.giscus.repo }}"
     data-repo-id="{{ site.giscus.repo_id }}"

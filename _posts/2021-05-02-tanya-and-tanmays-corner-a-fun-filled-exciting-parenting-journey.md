@@ -8,7 +8,7 @@ permalink: /tanya-and-tanmays-corner-a-fun-filled-exciting-parenting-journey/
 comment_count: 0
 ---
 
-!![Tanya and Tanmay's Corner](/assets/images/tanya and tanmay.jpg)
+[Tanya and Tanmay's Corner](/assets/images/tanya and tanmay.jpg)
 
 ### **WELCOME to Tanya and Tanmay's Corner**
 

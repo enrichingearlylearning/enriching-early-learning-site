@@ -610,7 +610,7 @@ permalink: /little-social-stars-group-2/
           <div class="form-desc">Fill in the form below and we'll be in touch within 24 hours to confirm your spot.</div>
         </div>
 
-        <form action="https://formspree.io/f/mjgzkovl" method="POST" id="enrolment-form">
+        <form id="enrolment-form">
 
           <div class="form-section-title">Your Information</div>
           <div class="form-grid">
@@ -984,16 +984,33 @@ permalink: /little-social-stars-group-2/
   document.getElementById('enrolment-form').addEventListener('submit', function(e) {
     e.preventDefault();
     var form = this;
-    fetch(form.action, {
+    var btn = form.querySelector('.btn-submit');
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+
+    /* PASTE YOUR SUPABASE DETAILS HERE (Settings > API Keys in Supabase) */
+    var SB_URL = 'https://yxkqoubatrywgfgexveo.supabase.co';
+    var SB_KEY = 'sb_publishable_mzmlAoJuvfUMpqeF0_7cPQ_wNf5rOjQ';
+
+    var data = {};
+    new FormData(form).forEach(function(v, k) { data[k] = v; });
+
+    var headers = { 'Content-Type': 'application/json', 'apikey': SB_KEY, 'Prefer': 'return=minimal' };
+    if (SB_KEY.indexOf('eyJ') === 0) headers['Authorization'] = 'Bearer ' + SB_KEY;
+
+    fetch(SB_URL + '/rest/v1/enrolments', {
       method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
+      headers: headers,
+      body: JSON.stringify(data)
     }).then(function(response) {
-      if (response.ok) {
-        form.style.display = 'none';
-        document.getElementById('form-header').style.display = 'none';
-        document.getElementById('enrolment-success').style.display = 'block';
-      }
+      if (!response.ok) throw new Error('Submit failed');
+      form.style.display = 'none';
+      document.getElementById('form-header').style.display = 'none';
+      document.getElementById('enrolment-success').style.display = 'block';
+    }).catch(function() {
+      btn.disabled = false;
+      btn.textContent = 'Submit Enrolment Form';
+      alert('Sorry, something went wrong. Please try again or email arzoo@enrichingearlylearning.com');
     });
   });
 </script>

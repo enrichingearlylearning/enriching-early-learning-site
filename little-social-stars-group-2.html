@@ -694,43 +694,16 @@ permalink: /little-social-stars-group-2/
 
           <hr class="form-divider"/>
 
-          <div class="form-section-title">Payment Plan</div>
+          <div class="form-section-title">Registration Fee</div>
 
-          <div class="form-group" style="margin-bottom:16px;">
-            <label class="form-label">Promo Code <span style="color:rgba(255,255,255,0.4);font-weight:500">(optional)</span></label>
-            <div style="display:flex;gap:10px;align-items:center;">
-              <input class="form-input" type="text" id="promo-code-input" name="promo_code" placeholder="Enter code e.g. FOUNDING2025" style="text-transform:uppercase;flex:1;"/>
-              <button type="button" onclick="applyPromoCode()" style="background:var(--teal);color:#fff;font-family:var(--font-b);font-size:13px;font-weight:800;padding:11px 20px;border-radius:10px;border:none;cursor:pointer;white-space:nowrap;text-transform:uppercase;letter-spacing:0.06em;">Apply</button>
-            </div>
-            <div id="promo-msg" style="font-family:var(--font-b);font-size:12px;font-weight:700;margin-top:8px;display:none;"></div>
-          </div>
-
-          <div class="form-group" style="margin-bottom:20px;">
-            <label class="form-label">Which payment option do you prefer? <span>*</span></label>
-            <div class="radio-group">
-              <label class="radio-option">
-                <input type="radio" name="payment" value="Term Upfront — $360" required onchange="showPaymentLink(this.value)"/>
-                <div>
-                  <div class="radio-label" id="label-term">Term Upfront — $360</div>
-                  <div class="radio-sub" id="sub-term">Full 10-week term · Save $90 · Best value</div>
-                </div>
-              </label>
-              <label class="radio-option">
-                <input type="radio" name="payment" value="Drop-In — $45/session" onchange="showPaymentLink(this.value)"/>
-                <div>
-                  <div class="radio-label">Drop-In — $45/session</div>
-                  <div class="radio-sub">No commitment · Subject to availability</div>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <div id="program-payment-box" style="display:none; margin-bottom:14px;" class="payment-box">
+          <div class="payment-box">
             <div class="payment-box-left">
-              <div class="payment-box-title" id="program-payment-title">Step 2 — Pay Program Fee</div>
-              <div class="payment-box-desc" id="program-payment-desc">Click to pay your selected program fee via Square.</div>
+              <div class="payment-box-title">Step 1 — Pay $25 Registration Fee</div>
+              <div class="payment-box-desc">Secures your child's spot. One-time only — never charged again.</div>
             </div>
-            <a id="program-payment-link" href="#" target="_blank" class="btn-square">Pay via Square →</a>
+            <a href="https://square.link/u/BcIlEJNu" target="_blank" class="btn-square">
+              Pay $25 via Square →
+            </a>
           </div>
 
           <hr class="form-divider"/>
@@ -854,19 +827,50 @@ permalink: /little-social-stars-group-2/
             <label class="check-text" for="agree">I have read and agree to all terms above including program consent, errors &amp; omissions, emergency contact, authorised pickup, mandatory reporting, liability waiver, cancellation and refund policy, withdrawal policy, behaviour expectations, program changes, and communication consent. I confirm all information provided is accurate. I understand my spot is confirmed only after the registration fee and program fee payments are received.</label>
           </div>
 
-          <div class="payment-box">
-            <div class="payment-box-left">
-              <div class="payment-box-title">Step 3 — Pay $25 Registration Fee</div>
-              <div class="payment-box-desc">Secures your child's spot. One-time only — never charged again.</div>
+          <hr class="form-divider"/>
+
+          <div class="form-section-title">Payment Plan</div>
+
+          <div class="form-group" style="margin-bottom:16px;">
+            <label class="form-label">Promo Code <span style="color:rgba(255,255,255,0.4);font-weight:500">(optional)</span></label>
+            <div style="display:flex;gap:10px;align-items:center;">
+              <input class="form-input" type="text" id="promo-code-input" name="promo_code" placeholder="Enter code e.g. FOUNDING2025" style="text-transform:uppercase;flex:1;"/>
+              <button type="button" onclick="applyPromoCode()" style="background:var(--teal);color:#fff;font-family:var(--font-b);font-size:13px;font-weight:800;padding:11px 20px;border-radius:10px;border:none;cursor:pointer;white-space:nowrap;text-transform:uppercase;letter-spacing:0.06em;">Apply</button>
             </div>
-            <a href="https://square.link/u/BcIlEJNu" target="_blank" class="btn-square">
-              Pay $25 via Square →
-            </a>
+            <div id="promo-msg" style="font-family:var(--font-b);font-size:12px;font-weight:700;margin-top:8px;display:none;"></div>
+          </div>
+
+          <div class="form-group" style="margin-bottom:20px;">
+            <label class="form-label">Which payment option do you prefer? <span>*</span></label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="payment" value="Term Upfront — $360" required onchange="showPaymentLink(this.value)"/>
+                <div>
+                  <div class="radio-label" id="label-term">Term Upfront — $360</div>
+                  <div class="radio-sub" id="sub-term">Full 10-week term · Save $90 · Best value</div>
+                </div>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="payment" value="Drop-In — $45/session" onchange="showPaymentLink(this.value)"/>
+                <div>
+                  <div class="radio-label">Drop-In — $45/session</div>
+                  <div class="radio-sub">No commitment · Subject to availability</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div id="program-payment-box" style="display:none; margin-bottom:14px;" class="payment-box">
+            <div class="payment-box-left">
+              <div class="payment-box-title" id="program-payment-title">Step 2 — Pay Program Fee</div>
+              <div class="payment-box-desc" id="program-payment-desc">Click to pay your selected program fee via Square.</div>
+            </div>
+            <a id="program-payment-link" href="#" target="_blank" class="btn-square">Pay via Square →</a>
           </div>
 
           <div class="form-submit-wrap">
             <button type="submit" class="btn-submit">Submit Enrolment Form</button>
-            <div class="form-note">Complete all steps above · We'll confirm within 24 hours · All information is kept private</div>
+            <div class="form-note">Payments open in a new tab — come back here after paying to finish · We'll confirm within 24 hours · All information is kept private</div>
           </div>
 
         </form>

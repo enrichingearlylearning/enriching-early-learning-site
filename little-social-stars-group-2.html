@@ -992,14 +992,19 @@ permalink: /little-social-stars-group-2/
       headers: headers,
       body: JSON.stringify(data)
     }).then(function(response) {
-      if (!response.ok) throw new Error('Submit failed');
+      if (!response.ok) {
+        return response.text().then(function(t) {
+          throw new Error('Error ' + response.status + ' - ' + t.slice(0, 300));
+        });
+      }
       form.style.display = 'none';
       document.getElementById('form-header').style.display = 'none';
       document.getElementById('enrolment-success').style.display = 'block';
-    }).catch(function() {
+    }).catch(function(err) {
+      console.error(err);
       btn.disabled = false;
       btn.textContent = 'Submit Enrolment Form';
-      alert('Sorry, something went wrong. Please try again or email arzoo@enrichingearlylearning.com');
+      alert('Sorry, something went wrong. Please try again or email arzoo@enrichingearlylearning.com\n\nDetails: ' + (err && err.message ? err.message : err));
     });
   });
 </script>

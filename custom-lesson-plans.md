@@ -33,6 +33,6 @@ Sit back and relax! Your custom lesson plan will be meticulously crafted and del
 
 ### Need Assistance?
 
-If you have any questions or require assistance at any stage of the process, feel free to contact us at ***enrichingearlylearning@gmail.com.*** We're here to ensure your custom lesson plan experience is seamless and tailored to your satisfaction.
+If you have any questions or require assistance at any stage of the process, feel free to contact us at ***arzoo@enrichingearlylearning.com.*** We're here to ensure your custom lesson plan experience is seamless and tailored to your satisfaction.
 
 Thank you for choosing us to be part of your educational journey!

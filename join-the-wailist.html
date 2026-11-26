@@ -1,0 +1,490 @@
+---
+layout: null
+title: "Join the Waitlist – Enriching Early Learning"
+permalink: /join-the-wailist/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Join the Waitlist – Enriching Early Learning</title>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --teal:     #008E97;
+    --teal-lt:  #76C5C9;
+    --teal-dk:  #00676F;
+    --coral:    #EB776A;
+    --coral-lt: #FDF0EE;
+    --cream:    #EB776A;
+    --teal-bg:  #E8F6F7;
+    --ink:      #1A2E30;
+    --body:     #3D5052;
+    --muted:    #7A9295;
+    --rule:     #E2EEF0;
+    --white:    #ffffff;
+    --font-h:   'ADLaM Display', sans-serif;
+    --font-b:   'Inter', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-b); background: var(--white); color: var(--body); line-height: 1.65; font-size: 15px; }
+
+  /* ── HERO ── */
+  .hero { background: var(--teal-bg); padding: 72px 40px 80px; text-align: center; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 10% 0%, rgba(0,142,151,0.1) 0%, transparent 55%), radial-gradient(ellipse 50% 50% at 90% 100%, rgba(235,119,106,0.1) 0%, transparent 55%); pointer-events: none; }
+  .hero-inner { position: relative; max-width: 700px; margin: 0 auto; }
+  .hero-tag { display: inline-block; background: var(--teal); color: #fff; font-family: var(--font-b); font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 6px 18px; border-radius: 100px; margin-bottom: 24px; }
+  .hero-emoji { font-size: 56px; margin-bottom: 16px; display: block; }
+  .hero h1 { font-family: var(--font-h); font-size: clamp(32px, 6vw, 52px); font-weight: 900; color: var(--teal-dk); letter-spacing: -0.02em; line-height: 1.05; text-transform: uppercase; margin-bottom: 20px; }
+  .hero-desc { font-family: var(--font-b); font-size: 16px; color: var(--body); max-width: 520px; margin: 0 auto 32px; font-weight: 500; line-height: 1.7; }
+  .hero-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .hero-pill { background: var(--white); border: 2px solid var(--teal-lt); color: var(--teal-dk); font-family: var(--font-b); font-size: 13px; font-weight: 700; padding: 8px 18px; border-radius: 100px; }
+
+  /* ── PAGE ── */
+  .page { max-width: 860px; margin: 0 auto; padding: 0 24px 80px; }
+
+  /* ── LABELS ── */
+  .section-label { font-family: var(--font-h); font-size: clamp(24px, 4vw, 36px); font-weight: 900; color: var(--coral); text-transform: uppercase; letter-spacing: -0.02em; margin-bottom: 6px; }
+  .section-sub-title { font-family: var(--font-h); font-size: 17px; font-style: italic; color: var(--teal-dk); margin-bottom: 8px; }
+  .section-sub { font-family: var(--font-b); font-size: 15px; color: var(--coral); margin-bottom: 32px; font-weight: 500; line-height: 1.6; }
+  .divider { border: none; border-top: 2px solid var(--rule); margin: 56px 0; }
+
+  /* ── SESSION FLOW ── */
+  .expect-section { padding-top: 56px; }
+  .session-flow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+  .flow-card { background: var(--teal-bg); border-radius: 16px; padding: 22px 18px; border-top: 4px solid var(--teal); }
+  .flow-num { width: 28px; height: 28px; background: var(--teal); color: #fff; border-radius: 50%; font-family: var(--font-b); font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
+  .flow-time { font-family: var(--font-b); font-size: 10.5px; font-weight: 700; color: var(--teal); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 5px; }
+  .flow-title { font-family: var(--font-h); font-size: 14px; color: var(--ink); margin-bottom: 5px; }
+  .flow-desc { font-family: var(--font-b); font-size: 12.5px; color: var(--body); line-height: 1.5; }
+
+  /* ── LEVELS ── */
+  .levels { display: flex; flex-direction: column; gap: 20px; margin-top: 28px; }
+  .level-card { border-radius: 20px; overflow: hidden; border: 2px solid var(--rule); box-shadow: 0 2px 16px rgba(0,103,111,0.06); }
+  .level-header { padding: 24px 28px; display: flex; align-items: center; gap: 16px; }
+  .lh-teal  { background: var(--teal); }
+  .lh-coral { background: var(--coral); }
+  .level-badge { width: 48px; height: 48px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-b); font-size: 22px; font-weight: 900; color: #fff; flex-shrink: 0; }
+  .level-header-text h3 { font-family: var(--font-h); font-size: 18px; color: #fff; text-transform: uppercase; margin-bottom: 3px; }
+  .level-header-text p  { font-family: var(--font-b); color: rgba(255,255,255,0.8); font-size: 13px; font-weight: 600; }
+  .level-body { background: var(--white); padding: 24px 28px; }
+  .level-skills { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .level-skill { display: flex; gap: 10px; align-items: flex-start; font-family: var(--font-b); font-size: 13.5px; color: var(--body); font-weight: 500; }
+  .ls-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+  .ld-teal  { background: var(--teal); }
+  .ld-coral { background: var(--coral); }
+  .level-grad { margin-top: 16px; background: var(--cream); border-radius: 10px; padding: 12px 16px; display: flex; gap: 10px; align-items: center; font-family: var(--font-b); font-size: 13px; color: #fff; font-weight: 600; }
+
+  /* ── PRICING ── */
+  .pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 28px auto 0; max-width: 680px; }
+  .price-card { border-radius: 18px; overflow: hidden; border: 2px solid var(--rule); }
+  .price-card.featured { border-color: var(--teal); box-shadow: 0 4px 24px rgba(0,142,151,0.15); }
+  .price-header { padding: 16px 18px 14px; background: var(--teal-bg); text-align: center; }
+  .price-card.featured .price-header { background: var(--teal); }
+  .price-name { font-family: var(--font-b); font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-dk); margin-bottom: 2px; }
+  .price-card.featured .price-name { color: rgba(255,255,255,0.85); }
+  .best-tag { display: inline-block; background: var(--coral); color: #fff; font-family: var(--font-b); font-size: 9.5px; font-weight: 800; padding: 2px 10px; border-radius: 100px; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px; }
+  .price-body { padding: 18px; text-align: center; }
+  .price-amount { font-family: var(--font-h); font-size: 34px; color: var(--teal-dk); line-height: 1; margin-bottom: 3px; }
+  .price-per  { font-family: var(--font-b); font-size: 12px; color: var(--muted); font-weight: 600; margin-bottom: 10px; }
+  .price-rate { display: inline-block; background: var(--cream); color: #fff; font-family: var(--font-b); font-size: 11.5px; font-weight: 700; padding: 4px 12px; border-radius: 100px; margin-bottom: 10px; }
+  .price-desc { font-family: var(--font-b); font-size: 12px; color: var(--muted); font-weight: 500; line-height: 1.5; }
+  .price-save { display: inline-block; background: var(--coral); color: #fff; font-family: var(--font-b); font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 100px; margin-top: 8px; }
+  .reg-row { display: flex; align-items: center; justify-content: space-between; background: var(--coral-lt); border: 2px solid rgba(235,119,106,0.25); border-radius: 14px; padding: 18px 24px; margin-top: 14px; gap: 16px; flex-wrap: wrap; }
+  .reg-title { font-family: var(--font-b); font-size: 14px; font-weight: 800; color: var(--ink); margin-bottom: 2px; }
+  .reg-desc  { font-family: var(--font-b); font-size: 12.5px; color: var(--muted); font-weight: 500; }
+  .reg-price { font-family: var(--font-h); font-size: 28px; color: var(--teal-dk); white-space: nowrap; }
+  .reg-once  { font-family: var(--font-b); font-size: 11px; color: var(--teal); font-weight: 700; text-align: right; }
+  .sibling-bar { background: var(--coral-lt); border: 2px solid rgba(235,119,106,0.25); border-radius: 14px; padding: 16px 22px; display: flex; gap: 12px; align-items: center; margin-top: 14px; }
+  .sb-icon  { font-size: 24px; flex-shrink: 0; }
+  .sb-title { font-family: var(--font-b); font-size: 14px; font-weight: 800; color: var(--ink); margin-bottom: 2px; }
+  .sb-desc  { font-family: var(--font-b); font-size: 12.5px; color: var(--body); font-weight: 500; }
+
+  /* ── INCLUDES ── */
+  .includes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
+  .include-card { background: var(--teal-bg); border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: flex-start; }
+  .include-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+  .include-title { font-family: var(--font-b); font-size: 13.5px; font-weight: 800; color: var(--ink); margin-bottom: 3px; }
+  .include-desc  { font-family: var(--font-b); font-size: 12px; color: var(--body); font-weight: 500; line-height: 1.5; }
+
+  /* ── LOCATION ── */
+  .location-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+  .location-card { background: var(--white); border: 2px solid var(--rule); border-radius: 18px; overflow: hidden; box-shadow: 0 2px 14px rgba(0,103,111,0.06); }
+  .location-card-header { background: var(--teal); padding: 16px 20px; display: flex; align-items: center; gap: 10px; }
+  .location-pin { font-size: 20px; flex-shrink: 0; }
+  .location-card-name { font-family: var(--font-b); font-size: 13px; font-weight: 800; color: #fff; line-height: 1.3; }
+  .location-card-body { padding: 18px 20px; }
+  .location-address { font-family: var(--font-b); font-size: 13.5px; color: var(--body); font-weight: 500; line-height: 1.7; margin-bottom: 14px; }
+  .location-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .location-tag { background: var(--teal-bg); color: var(--teal-dk); font-family: var(--font-b); font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 100px; }
+  .location-directions { display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--teal-dk); color: #fff; font-family: var(--font-b); font-size: 12px; font-weight: 700; padding: 10px 18px; border-radius: 100px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em; }
+  .location-soon { border: 2px dashed var(--rule); border-radius: 18px; padding: 36px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 8px; }
+  .ls-icon { font-size: 28px; opacity: 0.35; }
+  .ls-text { font-family: var(--font-b); font-size: 13px; font-weight: 700; color: var(--muted); }
+  .ls-sub  { font-family: var(--font-b); font-size: 12px; color: var(--rule); font-weight: 500; }
+
+  /* ── ENROLMENT FORM ── */
+  .form-wrap {
+    background: var(--teal-dk);
+    border-radius: 24px;
+    padding: 48px 44px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 56px;
+  }
+  .form-wrap::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 60% at 5% 0%, rgba(118,197,201,0.2) 0%, transparent 55%), radial-gradient(ellipse 50% 50% at 95% 100%, rgba(235,119,106,0.15) 0%, transparent 55%);
+    pointer-events: none;
+  }
+  .form-inner { position: relative; }
+
+  .form-header { text-align: center; margin-bottom: 40px; }
+  .form-title { font-family: var(--font-h); font-size: clamp(26px, 4vw, 40px); color: #fff; text-transform: uppercase; letter-spacing: -0.02em; margin-bottom: 8px; }
+  .form-subtitle { font-family: var(--font-h); font-size: 16px; font-style: italic; color: rgba(255,255,255,0.75); margin-bottom: 8px; }
+  .form-desc { font-family: var(--font-b); font-size: 14px; color: rgba(255,255,255,0.6); font-weight: 500; }
+
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px; }
+  .form-full { grid-column: 1 / -1; }
+
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-label {
+    font-family: var(--font-b);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+  }
+  .form-label span { color: var(--coral); margin-left: 2px; }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-family: var(--font-b);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink);
+    background: rgba(255,255,255,0.95);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 12px 16px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  .form-input:focus,
+  .form-select:focus,
+  .form-textarea:focus { border-color: var(--teal-lt); background: #fff; }
+  .form-input::placeholder,
+  .form-textarea::placeholder { color: #aab4b8; }
+  .form-textarea { resize: vertical; min-height: 100px; }
+  .form-select { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23008E97' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 40px; }
+
+  .radio-group { display: flex; flex-direction: column; gap: 8px; }
+  .radio-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(255,255,255,0.08);
+    border: 1.5px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .radio-option:hover { background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.3); }
+  .radio-option input[type="radio"] { margin-top: 2px; accent-color: var(--teal-lt); flex-shrink: 0; }
+  .radio-label { font-family: var(--font-b); font-size: 13.5px; font-weight: 600; color: rgba(255,255,255,0.9); }
+  .radio-sub { font-family: var(--font-b); font-size: 11.5px; color: rgba(255,255,255,0.55); margin-top: 2px; }
+
+  .check-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: rgba(255,255,255,0.06);
+    border: 1.5px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-top: 4px;
+  }
+  .check-row input[type="checkbox"] { margin-top: 2px; accent-color: var(--teal-lt); flex-shrink: 0; }
+  .check-text { font-family: var(--font-b); font-size: 13px; color: rgba(255,255,255,0.75); font-weight: 500; line-height: 1.5; }
+
+  .form-divider { border: none; border-top: 1px solid rgba(255,255,255,0.12); margin: 28px 0; }
+  .form-section-title {
+    font-family: var(--font-b);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 16px;
+  }
+
+  .payment-box {
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .payment-box-title { font-family: var(--font-b); font-size: 14px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+  .payment-box-desc { font-family: var(--font-b); font-size: 12.5px; color: rgba(255,255,255,0.6); font-weight: 500; max-width: 360px; line-height: 1.5; }
+  .btn-square {
+    background: #fff;
+    color: var(--teal-dk);
+    font-family: var(--font-b);
+    font-size: 13.5px;
+    font-weight: 800;
+    padding: 13px 28px;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+  }
+
+  .form-submit-wrap { text-align: center; margin-top: 32px; }
+  .btn-submit {
+    background: var(--coral);
+    color: #fff;
+    font-family: var(--font-b);
+    font-size: 15px;
+    font-weight: 800;
+    padding: 16px 48px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    width: 100%;
+    max-width: 360px;
+    transition: opacity 0.2s;
+  }
+  .btn-submit:hover { opacity: 0.9; }
+  .form-note { font-family: var(--font-b); font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 14px; text-align: center; font-weight: 500; }
+
+  @media (max-width: 640px) {
+    .hero { padding: 48px 20px 56px; }
+    .session-flow { grid-template-columns: 1fr 1fr; }
+    .level-skills { grid-template-columns: 1fr; }
+    .pricing-grid { grid-template-columns: 1fr; }
+    .includes-grid { grid-template-columns: 1fr; }
+    .location-grid { grid-template-columns: 1fr; }
+    .form-wrap { padding: 36px 24px; }
+    .form-grid { grid-template-columns: 1fr; }
+    .form-full { grid-column: 1; }
+  }
+
+.dropdown{position:relative;display:inline-block;}
+.dropdown-toggle{display:flex;align-items:center;gap:4px;}
+.dropdown-menu{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid #eee;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,0.08);min-width:240px;padding:8px;z-index:10;}
+.dropdown{padding-bottom:14px;margin-bottom:-14px;}
+.dropdown-menu a{display:block;padding:10px 14px;font-size:14px;font-weight:500;color:#333;border-radius:6px;white-space:nowrap;text-decoration:none;}
+.dropdown-menu a:hover{background:#F1E4D1;color:#00676F;}
+.dropdown.open .dropdown-menu,.dropdown:hover .dropdown-menu{display:block;}
+.social-row{display:flex;justify-content:center;gap:16px;padding:24px 0;max-width:1200px;margin:0 auto;}
+.social-circle{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;transition:opacity 0.2s;}
+.social-circle:hover{opacity:0.85;}
+
+.badge-divider{display:flex;align-items:center;gap:14px;margin:40px auto;max-width:900px;}
+.badge-divider img{width:48px;height:48px;flex-shrink:0;}
+.badge-divider .line{height:1px;background:#EDEDED;flex:1;}
+.badge-divider .label{font-size:12px;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:0.6px;white-space:nowrap;}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-85P4ZN3TH3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-85P4ZN3TH3");</script></head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <a href="/the-belonging-hub/" style="display:block;margin-bottom:16px;font-size:13px;font-weight:700;color:#00676F;text-decoration:none;">← The Belonging Hub</a>
+    <div class="hero-tag">Enriching Early Learning</div>
+    <span class="hero-emoji">📬</span>
+    <h1>Join the Waitlist</h1>
+    <p class="hero-desc">Be the first to know when enrolment opens. We'll reach out as soon as spaces become available.</p>
+    <div class="hero-pills">
+      <span class="hero-pill">🌟 Rising Social Stars · Ages 5–7</span>
+      <span class="hero-pill">🔍 Social Explorers · Ages 8–10</span>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- WAITLIST FORM -->
+  <div>
+    <div class="form-wrap">
+      <div class="form-inner">
+
+        <div class="form-header" id="form-header">
+          <div class="form-title">Join the Waitlist</div>
+          <div class="form-subtitle">Tell us a little about your family</div>
+          <div class="form-desc">Fill in the form below and we'll be in touch as soon as enrolment opens for your chosen program.</div>
+        </div>
+
+        <form id="waitlist-form">
+
+          <div class="form-section-title">Your Information</div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Parent / Guardian Name <span>*</span></label>
+              <input class="form-input" type="text" name="parent_name" placeholder="Your full name" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address <span>*</span></label>
+              <input class="form-input" type="email" name="email" placeholder="your@email.com" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number <span style="color:rgba(255,255,255,0.4);font-weight:500">(optional)</span></label>
+              <input class="form-input" type="tel" name="phone" placeholder="604 000 0000"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">How Did You Hear About Us?</label>
+              <select class="form-select" name="referral">
+                <option value="" disabled selected>Select an option</option>
+                <option>Google Search</option>
+                <option>Instagram</option>
+                <option>Facebook</option>
+                <option>Word of Mouth</option>
+                <option>Already enrolled in Little Social Stars</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <hr class="form-divider"/>
+
+          <div class="form-section-title">Your Child's Information</div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Child's First Name <span>*</span></label>
+              <input class="form-input" type="text" name="child_name" placeholder="Child's name" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Child's Age <span>*</span></label>
+              <select class="form-select" name="child_age" required>
+                <option value="" disabled selected>Select age</option>
+                <option>5 years old</option>
+                <option>6 years old</option>
+                <option>7 years old</option>
+                <option>8 years old</option>
+                <option>9 years old</option>
+                <option>10 years old</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Date of Birth <span>*</span></label>
+              <input class="form-input" type="date" name="child_dob" required/>
+            </div>
+          </div>
+
+          <hr class="form-divider"/>
+
+          <div class="form-section-title">Which Program Are You Interested In? <span style="color:#EB776A">*</span></div>
+          <div class="form-group" style="margin-bottom:20px;">
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="program" value="Rising Social Stars — Ages 5–7" required/>
+                <div>
+                  <div class="radio-label">🌟 Rising Social Stars</div>
+                  <div class="radio-sub">Ages 5–7 · Early Elementary</div>
+                </div>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="program" value="Social Explorers — Ages 8–10"/>
+                <div>
+                  <div class="radio-label">🔍 Social Explorers</div>
+                  <div class="radio-sub">Ages 8–10 · Upper Elementary</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <hr class="form-divider"/>
+
+          <div class="check-row">
+            <input type="checkbox" id="agree" name="contact_consent" value="Agreed to be contacted" required/>
+            <label class="check-text" for="agree">I'm happy to be contacted by Enriching Early Learning when enrolment opens for the program I've selected. I understand this is a waitlist only and does not guarantee a place.</label>
+          </div>
+
+          <div class="payment-box">
+            <div class="payment-box-left">
+              <div class="payment-box-title">📋 One-Time Registration Fee — $25</div>
+              <div class="payment-box-desc">Secures your child's spot on the waitlist. Paid once — never charged again.</div>
+            </div>
+            <a href="https://square.link/u/BcIlEJNu" target="_blank" class="btn-square">Pay $25 →</a>
+          </div>
+
+          <div class="form-submit-wrap">
+            <button type="submit" class="btn-submit">Submit My Details →</button>
+            <div class="form-note">Payment opens in a new tab — come back here after paying to submit · We'll confirm your spot once payment is received</div>
+          </div>
+
+        </form>
+
+        <div id="waitlist-success" style="display:none; text-align:center; padding:48px 20px;">
+          <div style="font-size:48px; margin-bottom:16px;">🎉</div>
+          <div style="font-family:'ADLaM Display',sans-serif; font-size:24px; color:#ffffff; text-transform:uppercase; margin-bottom:16px; letter-spacing:-0.01em;">You're on the list!</div>
+          <p style="font-family:'Inter',sans-serif; font-size:15px; color:#ffffff; font-weight:500; line-height:1.7; max-width:440px; margin:0 auto 14px;">We'll be in touch as soon as enrolment opens for your chosen program. Thank you for your interest in Enriching Early Learning.</p>
+          <p style="font-family:'Inter',sans-serif; font-size:13px; color:rgba(255,255,255,0.5); font-weight:500; line-height:1.6; max-width:440px; margin:0 auto;">Don't forget to complete your $25 registration payment if you haven't already.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var form = this;
+    var btn = form.querySelector('.btn-submit');
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+
+    var SB_URL = 'https://yxkqoubatrywgfgexveo.supabase.co';
+    var SB_KEY = 'sb_publishable_mzmlAoJuvfUMpqeF0_7cPQ_wNf5rOjQ';
+
+    var data = {};
+    new FormData(form).forEach(function(v, k) { data[k] = v; });
+
+    var headers = { 'Content-Type': 'application/json', 'apikey': SB_KEY, 'Prefer': 'return=minimal' };
+    if (SB_KEY.indexOf('eyJ') === 0) headers['Authorization'] = 'Bearer ' + SB_KEY;
+
+    fetch(SB_URL + '/rest/v1/waitlist', {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify(data)
+    }).then(function(response) {
+      if (!response.ok) {
+        return response.text().then(function(t) {
+          throw new Error('Error ' + response.status + ' - ' + t.slice(0, 300));
+        });
+      }
+      form.style.display = 'none';
+      document.getElementById('form-header').style.display = 'none';
+      document.getElementById('waitlist-success').style.display = 'block';
+    }).catch(function(err) {
+      console.error(err);
+      btn.disabled = false;
+      btn.textContent = 'Submit My Details →';
+      alert('Sorry, something went wrong. Please try again or email arzoo@enrichingearlylearning.com\n\nDetails: ' + (err && err.message ? err.message : err));
+    });
+  });
+</script>
+
+</body>
+</html>

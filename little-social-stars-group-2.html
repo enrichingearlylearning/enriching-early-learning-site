@@ -77,7 +77,7 @@ permalink: /little-social-stars-group-2/
   .level-grad { margin-top: 16px; background: var(--cream); border-radius: 10px; padding: 12px 16px; display: flex; gap: 10px; align-items: center; font-family: var(--font-b); font-size: 13px; color: #fff; font-weight: 600; }
 
   /* ── PRICING ── */
-  .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 28px; }
+  .pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 28px auto 0; max-width: 680px; }
   .price-card { border-radius: 18px; overflow: hidden; border: 2px solid var(--rule); }
   .price-card.featured { border-color: var(--teal); box-shadow: 0 4px 24px rgba(0,142,151,0.15); }
   .price-header { padding: 16px 18px 14px; background: var(--teal-bg); text-align: center; }
@@ -315,7 +315,7 @@ permalink: /little-social-stars-group-2/
     <p class="hero-desc">A warm, play-based social and emotional learning group for children ages 3–5 — building the friendship skills and emotional foundations that last a lifetime.</p>
     <div class="hero-pills">
       <span class="hero-pill">👶 Ages 3–5</span>
-      <span class="hero-pill">🗓 Twice a Week</span>
+      <span class="hero-pill">🗓 Once a Week</span>
       <span class="hero-pill">⏱ 90 Minutes</span>
       <span class="hero-pill">👫 Up to 8 Children</span>
     </div>
@@ -434,7 +434,7 @@ permalink: /little-social-stars-group-2/
   <div>
     <div class="section-label">Pricing</div>
     <div class="section-sub-title">Simple and transparent — no surprises</div>
-    <div class="section-sub">All options are based on a $40/session rate. Each term runs 10 weeks with 20 sessions — three terms per year, September through June.</div>
+    <div class="section-sub">Each term runs 10 weeks with one session per week (10 sessions) — three terms per year, September through June.</div>
 
     <div style="display:flex; align-items:center; justify-content:center; gap:0; background:var(--rule); border-radius:100px; padding:4px; margin-bottom:24px; width:fit-content; margin-left:auto; margin-right:auto;">
       <button id="toggle-regular" onclick="switchPricing('regular')" style="font-family:var(--font-b);font-size:13px;font-weight:800;padding:10px 24px;border-radius:100px;border:none;cursor:pointer;background:var(--teal-dk);color:#fff;transition:all 0.2s;letter-spacing:0.04em;">Regular</button>
@@ -452,27 +452,17 @@ permalink: /little-social-stars-group-2/
           <div class="best-tag">Best Value</div>
         </div>
         <div class="price-body">
-          <div class="price-amount" id="price-term">$720</div>
-          <div class="price-per">per term · 20 sessions</div>
+          <div class="price-amount" id="price-term">$360</div>
+          <div class="price-per">per term · 10 sessions</div>
           <div class="price-rate" id="rate-term">$36 / session</div>
           <div class="price-desc" id="desc-term">Pay for the full 10-week term at once</div>
-          <div class="price-save" id="save-term">Save $80</div>
-        </div>
-      </div>
-      <div class="price-card">
-        <div class="price-header"><div class="price-name">Monthly</div></div>
-        <div class="price-body">
-          <div class="price-amount" id="price-monthly">$320</div>
-          <div class="price-per">per month · ~8 sessions</div>
-          <div class="price-rate" id="rate-monthly">$40 / session</div>
-          <div class="price-desc">Billed monthly · flexible commitment</div>
-          <div class="price-save" id="save-monthly" style="display:none;">Save $64/mo</div>
+          <div class="price-save" id="save-term">Save $90</div>
         </div>
       </div>
       <div class="price-card">
         <div class="price-header"><div class="price-name">Drop-In</div></div>
         <div class="price-body">
-          <div class="price-amount">$65</div>
+          <div class="price-amount">$45</div>
           <div class="price-per">per session</div>
           <div class="price-rate">Subject to availability</div>
           <div class="price-desc">No commitment · try a session first</div>
@@ -719,23 +709,16 @@ permalink: /little-social-stars-group-2/
             <label class="form-label">Which payment option do you prefer? <span>*</span></label>
             <div class="radio-group">
               <label class="radio-option">
-                <input type="radio" name="payment" value="Term Upfront — $720" required onchange="showPaymentLink(this.value)"/>
+                <input type="radio" name="payment" value="Term Upfront — $360" required onchange="showPaymentLink(this.value)"/>
                 <div>
-                  <div class="radio-label" id="label-term">Term Upfront — $720</div>
-                  <div class="radio-sub" id="sub-term">Full 10-week term · Save $80 · Best value</div>
+                  <div class="radio-label" id="label-term">Term Upfront — $360</div>
+                  <div class="radio-sub" id="sub-term">Full 10-week term · Save $90 · Best value</div>
                 </div>
               </label>
               <label class="radio-option">
-                <input type="radio" name="payment" value="Monthly — $320/month" onchange="showPaymentLink(this.value)"/>
+                <input type="radio" name="payment" value="Drop-In — $45/session" onchange="showPaymentLink(this.value)"/>
                 <div>
-                  <div class="radio-label" id="label-monthly">Monthly — $320/month</div>
-                  <div class="radio-sub" id="sub-monthly">~8 sessions per month · Flexible</div>
-                </div>
-              </label>
-              <label class="radio-option">
-                <input type="radio" name="payment" value="Drop-In — $65/session" onchange="showPaymentLink(this.value)"/>
-                <div>
-                  <div class="radio-label">Drop-In — $65/session</div>
+                  <div class="radio-label">Drop-In — $45/session</div>
                   <div class="radio-sub">No commitment · Subject to availability</div>
                 </div>
               </label>
@@ -913,35 +896,39 @@ permalink: /little-social-stars-group-2/
     document.getElementById('toggle-founding').style.color      = isFounding ? '#fff' : 'var(--muted)';
     document.getElementById('founding-badge').style.display = isFounding ? 'block' : 'none';
 
-    document.getElementById('price-term').textContent    = isFounding ? '$576' : '$720';
-    document.getElementById('rate-term').textContent     = isFounding ? '$28.80 / session' : '$36 / session';
-    document.getElementById('desc-term').textContent     = isFounding ? '20% off · Locked in forever' : 'Pay for the full 10-week term at once';
-    document.getElementById('save-term').textContent     = isFounding ? 'Save $144' : 'Save $80';
-    document.getElementById('price-monthly').textContent = isFounding ? '$256' : '$320';
-    document.getElementById('rate-monthly').textContent  = isFounding ? '$32 / session' : '$40 / session';
-    document.getElementById('save-monthly').style.display = isFounding ? 'block' : 'none';
+    document.getElementById('price-term').textContent    = isFounding ? '$306' : '$360';
+    document.getElementById('rate-term').textContent     = isFounding ? '$30.60 / session' : '$36 / session';
+    document.getElementById('desc-term').textContent     = isFounding ? '15% off · Locked in forever' : 'Pay for the full 10-week term at once';
+    document.getElementById('save-term').textContent     = isFounding ? 'Save $54' : 'Save $90';
 
     var promoInput = document.getElementById('promo-code-input');
     if (promoInput && isFounding) {
       promoInput.value = 'FOUNDING2025';
       applyPromoCode();
     }
+    if (!isFounding) {
+      /* switching back to regular pricing: clear any founding code and reset labels/links */
+      foundingActive = false;
+      if (promoInput && promoInput.value.trim().toUpperCase() === 'FOUNDING2025') promoInput.value = '';
+      var promoMsg = document.getElementById('promo-msg');
+      if (promoMsg) promoMsg.style.display = 'none';
+      document.getElementById('label-term').textContent = 'Term Upfront — $360';
+      document.getElementById('sub-term').textContent   = 'Full 10-week term · Save $90 · Best value';
+      var chosen = document.querySelector('input[name="payment"]:checked');
+      if (chosen) showPaymentLink(chosen.value);
+    }
   }
 
-  /* NOTE: The Square URLs below are PLACEHOLDERS ('#').
-     Replace each with the real Square payment link for that specific
-     price point before this page goes live. The $25 registration fee
-     link further down the form is already the real Square link. */
+  /* Square payment links, one per price point.
+     To change a link or price later, edit the entries below. */
   var regularLinks = {
-    'Term Upfront — $720':   { label: 'Step 2 — Pay Term Upfront — $720', desc: 'Full 10-week term · Save $80 · Best value', url: '#', btn: 'Pay $720 via Square →' },
-    'Monthly — $320/month':  { label: 'Step 2 — Pay First Month — $320',  desc: '~8 sessions · Billed monthly thereafter',   url: '#', btn: 'Pay $320 via Square →' },
-    'Drop-In — $65/session': { label: 'Step 2 — Pay Drop-In — $65',       desc: 'Single session · Subject to availability', url: '#', btn: 'Pay $65 via Square →' }
+    'Term Upfront — $360':   { label: 'Step 2 — Pay Term Upfront — $360', desc: 'Full 10-week term · Save $90 · Best value', url: 'https://square.link/u/MLDfhU8m', btn: 'Pay $360 via Square →' },
+    'Drop-In — $45/session': { label: 'Step 2 — Pay Drop-In — $45',       desc: 'Single session · Subject to availability', url: 'https://square.link/u/A4HbyHvL', btn: 'Pay $45 via Square →' }
   };
 
   var foundingLinks = {
-    'Term Upfront — $720':   { label: 'Step 2 — Pay Founding Family Term — $576', desc: 'Full 10-week term · 20% off · Locked in forever', url: '#', btn: 'Pay $576 via Square →' },
-    'Monthly — $320/month':  { label: 'Step 2 — Pay Founding Family Monthly — $256', desc: '~8 sessions · 20% off · Locked in forever', url: '#', btn: 'Pay $256 via Square →' },
-    'Drop-In — $65/session': { label: 'Step 2 — Pay Drop-In — $65', desc: 'Single session · Subject to availability', url: '#', btn: 'Pay $65 via Square →' }
+    'Term Upfront — $360':   { label: 'Step 2 — Pay Founding Family Term — $306', desc: 'Full 10-week term · 15% off · Locked in forever', url: 'https://square.link/u/W43DbxNA', btn: 'Pay $306 via Square →' },
+    'Drop-In — $45/session': { label: 'Step 2 — Pay Drop-In — $45', desc: 'Single session · Subject to availability', url: 'https://square.link/u/A4HbyHvL', btn: 'Pay $45 via Square →' }
   };
 
   function applyPromoCode() {
@@ -951,11 +938,9 @@ permalink: /little-social-stars-group-2/
       foundingActive = true;
       msg.style.display = 'block';
       msg.style.color = '#86EFAC';
-      msg.textContent = '✓ Founding Family code applied — 20% off locked in!';
-      document.getElementById('label-term').textContent    = 'Term Upfront — $576 (was $720)';
-      document.getElementById('sub-term').textContent      = 'Full 10-week term · 20% off · Founding Family rate';
-      document.getElementById('label-monthly').textContent = 'Monthly — $256/month (was $320)';
-      document.getElementById('sub-monthly').textContent   = '~8 sessions per month · 20% off · Founding Family rate';
+      msg.textContent = '✓ Founding Family code applied — 15% off locked in!';
+      document.getElementById('label-term').textContent    = 'Term Upfront — $306 (was $360)';
+      document.getElementById('sub-term').textContent      = 'Full 10-week term · 15% off · Founding Family rate';
       var checkedRadio = document.querySelector('input[name="payment"]:checked');
       if (checkedRadio) showPaymentLink(checkedRadio.value);
     } else if (code.length > 0) {

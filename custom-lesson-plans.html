@@ -1,0 +1,306 @@
+---
+layout: null
+title: "Custom Lesson Plans"
+permalink: /custom-lesson-plans/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom Lesson Plans | Enriching Early Learning</title>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-85P4ZN3TH3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-85P4ZN3TH3');
+</script>
+<style>
+/* ===== Custom lesson plans page ===== */
+.lp h2{margin:52px 0 8px;}
+.lp .lp-sub{color:#555;margin:0 0 22px;line-height:1.7;}
+.lp .lp-lead{margin:0;line-height:1.75;color:#3a3a3a;}
+
+/* buttons */
+.lp .lp-btn,.lp .lp-btn-outline{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-weight:600;font-size:14px;padding:12px 26px;border-radius:24px;text-decoration:none !important;transition:background 0.2s,transform 0.2s;cursor:pointer;font-family:inherit;}
+.lp .lp-btn{background:#EB776A;color:#fff !important;border:2px solid #EB776A;}
+.lp .lp-btn:hover{background:#d9665a;border-color:#d9665a;transform:translateY(-1px);}
+.lp .lp-btn:disabled{opacity:0.7;cursor:default;transform:none;}
+.lp .lp-btn-outline{background:#fff;color:#00676F !important;border:2px solid #00676F;}
+.lp .lp-btn-outline:hover{background:#F2F9F9;transform:translateY(-1px);}
+
+/* how it works */
+.lp .lp-steps{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px;counter-reset:step;}
+.lp .lp-steps li{counter-increment:step;display:flex;gap:16px;align-items:flex-start;background:#EDF7F7;border-radius:16px;padding:18px 20px;}
+.lp .lp-steps li::before{content:counter(step);flex-shrink:0;width:34px;height:34px;border-radius:50%;background:#00676F;color:#fff;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;}
+.lp .lp-steps strong{display:block;color:#00676F;font-size:16px;margin-bottom:3px;}
+.lp .lp-steps span{font-size:14.5px;line-height:1.65;color:#3a3a3a;}
+
+/* form */
+.lp .lp-form-card{background:#fff;border:1px solid #E3ECEC;border-radius:22px;padding:34px;box-shadow:0 12px 40px rgba(0,32,34,0.06);scroll-margin-top:20px;}
+.lp .lp-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.lp .lp-full{grid-column:1 / -1;}
+.lp .lp-field label{display:block;font-weight:600;font-size:13.5px;color:#00676F;margin-bottom:6px;line-height:1.45;}
+.lp .lp-field label span{color:#EB776A;}
+.lp .lp-field label em{font-style:normal;font-weight:500;color:#888;}
+.lp .lp-field .lp-hint{display:block;font-size:12.5px;font-weight:500;color:#777;margin:-2px 0 8px;line-height:1.5;}
+.lp .lp-field input,.lp .lp-field textarea{width:100%;padding:12px 14px;border:1px solid #D3DFE0;border-radius:12px;font-family:inherit;font-size:15px;color:#1a1a1a;background:#fff;transition:border-color 0.2s,box-shadow 0.2s;}
+.lp .lp-field textarea{min-height:110px;resize:vertical;line-height:1.6;}
+.lp .lp-field input:focus,.lp .lp-field textarea:focus{outline:none;border-color:#008E97;box-shadow:0 0 0 3px rgba(0,142,151,0.15);}
+.lp .lp-field.lp-error input,.lp .lp-field.lp-error textarea{border-color:#D64545;box-shadow:0 0 0 3px rgba(214,69,69,0.12);}
+.lp .lp-hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden;}
+.lp .lp-form-foot{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:24px;}
+.lp .lp-note{font-size:13px;color:#777;line-height:1.5;}
+
+/* success + copy of responses */
+.lp .lp-success{display:none;padding:10px 4px;}
+.lp .lp-success .lp-success-head{text-align:center;padding:14px 8px 8px;}
+.lp .lp-success .lp-success-icon{font-size:46px;display:block;margin-bottom:10px;}
+.lp .lp-success h3{margin:0 0 10px;color:#00676F;font-size:24px;}
+.lp .lp-success .lp-success-head p{margin:0 auto;max-width:520px;line-height:1.7;color:#3a3a3a;}
+.lp .lp-copy{background:#FBF3EC;border-radius:16px;padding:20px 22px;margin-top:22px;}
+.lp .lp-copy h4{margin:0 0 12px;color:#00676F;font-size:16px;}
+.lp .lp-copy dl{margin:0;}
+.lp .lp-copy dt{font-weight:700;font-size:13px;color:#00676F;margin-top:12px;}
+.lp .lp-copy dd{margin:2px 0 0;font-size:14.5px;line-height:1.6;color:#3a3a3a;white-space:pre-wrap;overflow-wrap:anywhere;}
+.lp .lp-copy-actions{margin-top:18px;text-align:center;}
+
+/* help */
+.lp .lp-help{background:#EDF7F7;border-radius:18px;padding:24px 26px;margin-top:52px;text-align:center;}
+.lp .lp-help h3{margin:0 0 6px;color:#00676F;font-size:19px;}
+.lp .lp-help p{margin:0;line-height:1.7;color:#3a3a3a;}
+
+@media (max-width:640px){
+  .lp h2{margin-top:42px;}
+  .lp .lp-form-card{padding:22px;}
+  .lp .lp-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+{% include header.html %}
+
+<div class="hero">
+  <div class="hero-blob"></div>
+  <div class="hero-inner">
+    <h1>Custom Lesson Plans</h1>
+  </div>
+</div>
+
+<div class="content">
+  <div class="lp">
+
+    <!-- INTRO -->
+    <p class="lp-lead">Welcome to our custom lesson plan service! We're thrilled to assist you in creating a personalized learning experience tailored to your unique requirements. Follow the simple steps below to initiate the process.</p>
+
+    <!-- HOW IT WORKS -->
+    <h2>How it works</h2>
+    <ol class="lp-steps">
+      <li><div><strong>Share your requirements</strong><span>Fill out the request form below with your specific requirements. Provide as much detail as possible to ensure we create a lesson plan that perfectly suits your needs.</span></div></li>
+      <li><div><strong>Submit and wait</strong><span>Submit the form once you've filled in all the necessary details. We appreciate your patience as our team analyzes your requirements.</span></div></li>
+      <li><div><strong>Receive a quote</strong><span>Expect to receive a detailed quote over the email address you provided in the form. This quote will outline the scope of work and associated costs.</span></div></li>
+      <li><div><strong>Approval and payment</strong><span>Upon approval of the quote, we'll send you a secure link for payment. Follow the link to complete the transaction and confirm your order.</span></div></li>
+      <li><div><strong>Relax and await delivery</strong><span>Sit back and relax! Your custom lesson plan will be meticulously crafted and delivered directly to your inbox within the agreed-upon timeframe.</span></div></li>
+    </ol>
+
+    <!-- FORM -->
+    <h2>Share your requirements</h2>
+    <p class="lp-sub">The aim of this form is to understand your requirements for the curriculum or lesson plan that you would like us to create for you. Fields marked <span style="color:#EB776A;">*</span> are required.</p>
+    <div class="lp-form-card" id="lp-form-card">
+      <form id="lp-form" novalidate>
+        <div class="lp-grid">
+
+          <div class="lp-field">
+            <label for="lp-email">Email <span>*</span></label>
+            <input id="lp-email" type="email" name="email" placeholder="your@email.com" required maxlength="320" autocomplete="email">
+          </div>
+          <div class="lp-field">
+            <label for="lp-name">Name <span>*</span></label>
+            <input id="lp-name" type="text" name="name" placeholder="Your full name" required maxlength="200" autocomplete="name">
+          </div>
+
+          <div class="lp-field lp-full">
+            <label for="lp-age">Mention the age group/s for which the lesson plan or the curriculum will be targeted at <span>*</span></label>
+            <input id="lp-age" type="text" name="age_groups" placeholder="e.g. Toddlers (18–36 months) and Preschool (3–5 years)" required maxlength="500">
+          </div>
+
+          <div class="lp-field lp-full">
+            <label for="lp-philosophy">Mention the philosophy adopted by your school <span>*</span></label>
+            <span class="lp-hint">Philosophy guides the outlook of the curriculum and activities, for example Montessori.</span>
+            <input id="lp-philosophy" type="text" name="philosophy" placeholder="e.g. Montessori, Reggio Emilia, play-based" required maxlength="500">
+          </div>
+
+          <div class="lp-field lp-full">
+            <label for="lp-themes">Mention the number of themes required to be covered under your curriculum <span>*</span></label>
+            <span class="lp-hint">If you wish to order only lesson plans, kindly mention the specific themes.</span>
+            <textarea id="lp-themes" name="themes" placeholder="Number of themes, or the specific themes you'd like covered" required maxlength="3000"></textarea>
+          </div>
+
+          <div class="lp-field lp-full">
+            <label for="lp-days">Please share the number of days expected under each theme <span>*</span></label>
+            <input id="lp-days" type="text" name="days_per_theme" placeholder="e.g. 5 days per theme" required maxlength="500">
+          </div>
+
+          <div class="lp-field lp-full">
+            <label for="lp-format">Also share if there is any specific format to be followed or components to be added to your lesson plan <span>*</span></label>
+            <textarea id="lp-format" name="format_components" placeholder="Any format or components you'd like included" required maxlength="3000"></textarea>
+          </div>
+
+          <div class="lp-field lp-full">
+            <label for="lp-culture">Lastly, kindly mention if there are any cultural sensitivities that need to be taken care of while designing the activities <span>*</span></label>
+            <textarea id="lp-culture" name="cultural_sensitivities" placeholder="Anything we should be mindful of (or write 'None')" required maxlength="3000"></textarea>
+          </div>
+
+          <div class="lp-field lp-full">
+            <label for="lp-other">Any other requirements? <em>(optional)</em></label>
+            <textarea id="lp-other" name="other_requirements" placeholder="Anything else you'd like us to know" maxlength="3000"></textarea>
+          </div>
+
+          <!-- spam trap: real visitors never see or fill this -->
+          <div class="lp-hp" aria-hidden="true">
+            <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          </div>
+        </div>
+
+        <div class="lp-form-foot">
+          <button type="submit" class="lp-btn" id="lp-submit">Submit Request →</button>
+          <span class="lp-note">We'll use your details only to prepare your quote and lesson plan.</span>
+        </div>
+      </form>
+
+      <div class="lp-success" id="lp-success">
+        <div class="lp-success-head">
+          <span class="lp-success-icon">🌟</span>
+          <h3>Thank you, your request has been received!</h3>
+          <p>We'll review your requirements and send a detailed quote to the email address you provided. Below is a copy of your responses for your records.</p>
+        </div>
+        <div class="lp-copy">
+          <h4>Your responses</h4>
+          <dl id="lp-copy-list"></dl>
+          <div class="lp-copy-actions">
+            <button type="button" class="lp-btn-outline" id="lp-download">Download a copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEED HELP -->
+    <div class="lp-help">
+      <h3>Need assistance?</h3>
+      <p>If you have any questions or require assistance at any stage of the process, feel free to contact us at <a href="mailto:enrichingearlylearning@gmail.com"><strong>enrichingearlylearning@gmail.com</strong></a> or visit our <a href="/contact/">contact page</a>.<br>Thank you for choosing us to be part of your educational journey!</p>
+    </div>
+
+  </div>
+</div>
+
+{% include footer.html %}
+
+<script>
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
+    if (window.innerWidth < 900) { e.preventDefault(); this.parentElement.classList.toggle('open'); }
+  });
+});
+
+(function() {
+  var form = document.getElementById('lp-form');
+  var btn = document.getElementById('lp-submit');
+  var LABELS = {
+    email: 'Email', name: 'Name',
+    age_groups: 'Age group/s', philosophy: "School's philosophy",
+    themes: 'Themes required', days_per_theme: 'Days per theme',
+    format_components: 'Format / components', cultural_sensitivities: 'Cultural sensitivities',
+    other_requirements: 'Other requirements'
+  };
+  var REQUIRED = ['email', 'name', 'age_groups', 'philosophy', 'themes', 'days_per_theme', 'format_components', 'cultural_sensitivities'];
+  var lastResponses = null;
+
+  function showThanks(data) {
+    lastResponses = data;
+    var list = document.getElementById('lp-copy-list');
+    list.innerHTML = '';
+    Object.keys(LABELS).forEach(function(k) {
+      if (!data[k]) return;
+      var dt = document.createElement('dt'); dt.textContent = LABELS[k];
+      var dd = document.createElement('dd'); dd.textContent = data[k];
+      list.appendChild(dt); list.appendChild(dd);
+    });
+    form.style.display = 'none';
+    document.getElementById('lp-success').style.display = 'block';
+    document.getElementById('lp-form-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  document.getElementById('lp-download').addEventListener('click', function() {
+    if (!lastResponses) return;
+    var lines = ['Enriching Early Learning - Custom Lesson Plan Request', ''];
+    Object.keys(LABELS).forEach(function(k) { if (lastResponses[k]) lines.push(LABELS[k] + ':', lastResponses[k], ''); });
+    var blob = new Blob([lines.join('\n')], { type: 'text/plain' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = 'lesson-plan-request.txt';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function() { URL.revokeObjectURL(a.href); }, 1000);
+  });
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    /* gather and trim answers */
+    var data = {};
+    new FormData(form).forEach(function(v, k) { if (k !== 'website') data[k] = String(v).trim(); });
+
+    /* required fields: highlight what's missing */
+    form.querySelectorAll('.lp-field').forEach(function(f) { f.classList.remove('lp-error'); });
+    var missing = REQUIRED.filter(function(k) { return !data[k]; });
+    if (missing.length) {
+      missing.forEach(function(k) { form.elements[k].closest('.lp-field').classList.add('lp-error'); });
+      form.elements[missing[0]].focus();
+      alert('Please fill in all the fields marked with *.');
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+      form.elements['email'].closest('.lp-field').classList.add('lp-error');
+      form.elements['email'].focus();
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    /* spam trap: if the hidden field was filled, pretend it worked and send nothing */
+    if (form.elements['website'].value) { showThanks(data); return; }
+
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+
+    var SB_URL = 'https://yxkqoubatrywgfgexveo.supabase.co';
+    var SB_KEY = 'sb_publishable_mzmlAoJuvfUMpqeF0_7cPQ_wNf5rOjQ';
+    var payload = {};
+    Object.keys(data).forEach(function(k) { if (data[k] !== '') payload[k] = data[k]; });
+
+    var headers = { 'Content-Type': 'application/json', 'apikey': SB_KEY, 'Prefer': 'return=minimal' };
+    if (SB_KEY.indexOf('eyJ') === 0) headers['Authorization'] = 'Bearer ' + SB_KEY;
+
+    fetch(SB_URL + '/rest/v1/lesson_plan_requests', {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify(payload)
+    }).then(function(response) {
+      if (!response.ok) {
+        return response.text().then(function(t) {
+          throw new Error('Error ' + response.status + ' - ' + t.slice(0, 300));
+        });
+      }
+      showThanks(data);
+    }).catch(function(err) {
+      console.error(err);
+      btn.disabled = false;
+      btn.textContent = 'Submit Request →';
+      alert('Sorry, something went wrong. Please try again or email us at enrichingearlylearning@gmail.com\n\nDetails: ' + (err && err.message ? err.message : err));
+    });
+  });
+})();
+</script>
+</body>
+</html>

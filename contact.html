@@ -1,0 +1,264 @@
+---
+layout: null
+title: "Contact Us"
+permalink: /contact/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | Enriching Early Learning</title>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-85P4ZN3TH3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-85P4ZN3TH3');
+</script>
+<style>
+/* ===== Contact page ===== */
+.ct h2{margin:52px 0 8px;}
+.ct .ct-sub{color:#555;margin:0 0 22px;line-height:1.7;}
+.ct .ct-lead{margin:0;line-height:1.75;color:#3a3a3a;}
+
+/* buttons */
+.ct .ct-btn,.ct .ct-btn-outline{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-weight:600;font-size:14px;padding:12px 26px;border-radius:24px;text-decoration:none !important;transition:background 0.2s,transform 0.2s;cursor:pointer;font-family:inherit;}
+.ct .ct-btn{background:#EB776A;color:#fff !important;border:2px solid #EB776A;}
+.ct .ct-btn:hover{background:#d9665a;border-color:#d9665a;transform:translateY(-1px);}
+.ct .ct-btn:disabled{opacity:0.7;cursor:default;transform:none;}
+.ct .ct-btn-outline{background:#fff;color:#00676F !important;border:2px solid #00676F;}
+.ct .ct-btn-outline:hover{background:#F2F9F9;transform:translateY(-1px);}
+
+/* ways to reach us */
+.ct .ct-ways{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px;}
+.ct .ct-way{display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid #EDEDED;border-radius:16px;padding:22px;text-decoration:none !important;transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s;}
+.ct .ct-way:hover{border-color:#76C5C9;transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,103,111,0.09);}
+.ct .ct-way .ct-way-icon{font-size:26px;}
+.ct .ct-way h3{margin:0;font-size:17px;color:#00676F;}
+.ct .ct-way p{margin:0;font-size:14.5px;line-height:1.55;color:#3a3a3a;overflow-wrap:anywhere;}
+.ct .ct-way .ct-way-go{margin-top:auto;padding-top:6px;font-weight:700;font-size:13.5px;color:#EB776A;}
+.ct .ct-way.ct-featured{background:#EDF7F7;border-color:#CFE6E7;}
+
+/* form */
+.ct .ct-form-card{background:#fff;border:1px solid #E3ECEC;border-radius:22px;padding:34px;box-shadow:0 12px 40px rgba(0,32,34,0.06);}
+.ct .ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.ct .ct-full{grid-column:1 / -1;}
+.ct .ct-field label{display:block;font-weight:600;font-size:13.5px;color:#00676F;margin-bottom:6px;}
+.ct .ct-field label span{color:#EB776A;}
+.ct .ct-field label em{font-style:normal;font-weight:500;color:#888;}
+.ct .ct-field input,.ct .ct-field select,.ct .ct-field textarea{width:100%;padding:12px 14px;border:1px solid #D3DFE0;border-radius:12px;font-family:inherit;font-size:15px;color:#1a1a1a;background:#fff;transition:border-color 0.2s,box-shadow 0.2s;}
+.ct .ct-field textarea{min-height:140px;resize:vertical;line-height:1.6;}
+.ct .ct-field input:focus,.ct .ct-field select:focus,.ct .ct-field textarea:focus{outline:none;border-color:#008E97;box-shadow:0 0 0 3px rgba(0,142,151,0.15);}
+.ct .ct-hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden;}
+.ct .ct-form-foot{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:22px;}
+.ct .ct-note{font-size:13px;color:#777;line-height:1.5;}
+.ct .ct-success{display:none;text-align:center;padding:36px 12px;}
+.ct .ct-success .ct-success-icon{font-size:46px;display:block;margin-bottom:12px;}
+.ct .ct-success h3{margin:0 0 10px;color:#00676F;font-size:24px;}
+.ct .ct-success p{margin:0 auto;max-width:460px;line-height:1.7;color:#3a3a3a;}
+
+/* where we are */
+.ct .ct-where{display:flex;flex-wrap:wrap;gap:16px;margin-top:18px;}
+.ct .ct-where > div{flex:1 1 260px;background:#FBF3EC;border-radius:16px;padding:20px 22px;}
+.ct .ct-where h3{margin:0 0 6px;font-size:16px;color:#00676F;}
+.ct .ct-where p{margin:0;font-size:14.5px;line-height:1.65;color:#3a3a3a;}
+
+@media (max-width:640px){
+  .ct h2{margin-top:42px;}
+  .ct .ct-form-card{padding:22px;}
+  .ct .ct-grid{grid-template-columns:1fr;}
+  .ct .ct-ways{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+{% include header.html %}
+
+<div class="hero">
+  <div class="hero-blob"></div>
+  <div class="hero-inner">
+    <h1>Contact Us</h1>
+  </div>
+</div>
+
+<div class="content">
+  <div class="ct">
+
+    <!-- INTRO -->
+    <h2 style="margin-top:0;">Connect with us</h2>
+    <p class="ct-lead">Thank you for visiting Enriching Early Learning. We appreciate your interest and would love to hear from you. Whether you have a question, a suggestion, or just want to say hello, we encourage you to reach out.</p>
+
+    <!-- WAYS TO REACH US -->
+    <h2>Ways to reach us</h2>
+    <div class="ct-ways">
+      <a class="ct-way ct-featured" href="https://linktr.ee/enrichingearlylearning#494275409" target="_blank" rel="noopener">
+        <span class="ct-way-icon">📅</span>
+        <h3>Free Consultation</h3>
+        <p>Talk through your classroom, team or family's needs with us.</p>
+        <span class="ct-way-go">Book a time →</span>
+      </a>
+      <a class="ct-way" href="mailto:enrichingearlylearning@gmail.com">
+        <span class="ct-way-icon">✉️</span>
+        <h3>Email</h3>
+        <p>enrichingearlylearning@gmail.com</p>
+        <span class="ct-way-go">Send an email →</span>
+      </a>
+      <a class="ct-way" href="https://api.whatsapp.com/send/?phone=15145508176&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener">
+        <span class="ct-way-icon">💬</span>
+        <h3>WhatsApp</h3>
+        <p>Send us a quick message.</p>
+        <span class="ct-way-go">Open WhatsApp →</span>
+      </a>
+      <a class="ct-way" href="tel:+15145508176">
+        <span class="ct-way-icon">📞</span>
+        <h3>Phone</h3>
+        <p>+1 (514) 550-8176</p>
+        <span class="ct-way-go">Call us →</span>
+      </a>
+    </div>
+
+    <!-- FORM -->
+    <h2>Send us a message</h2>
+    <p class="ct-sub">Fill in the form and we'll get back to you as soon as we can.</p>
+    <div class="ct-form-card">
+      <form id="contact-form" novalidate>
+        <div class="ct-grid">
+          <div class="ct-field">
+            <label for="ct-name">Your name <span>*</span></label>
+            <input id="ct-name" type="text" name="name" placeholder="Full name" required autocomplete="name">
+          </div>
+          <div class="ct-field">
+            <label for="ct-email">Email address <span>*</span></label>
+            <input id="ct-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email">
+          </div>
+          <div class="ct-field">
+            <label for="ct-phone">Phone number <em>(optional)</em></label>
+            <input id="ct-phone" type="tel" name="phone" placeholder="604 000 0000" autocomplete="tel">
+          </div>
+          <div class="ct-field">
+            <label for="ct-type">I am a… <em>(optional)</em></label>
+            <select id="ct-type" name="visitor_type">
+              <option value="" disabled selected>Select one</option>
+              <option>Parent / family</option>
+              <option>Educator</option>
+              <option>Center or program leader</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="ct-field ct-full">
+            <label for="ct-topic">What can we help with? <em>(optional)</em></label>
+            <select id="ct-topic" name="topic">
+              <option value="" disabled selected>Choose a topic</option>
+              <option>Free consultation</option>
+              <option>The Belonging Hub / Little Social Stars</option>
+              <option>Coaching &amp; consultation</option>
+              <option>Professional development &amp; workshops</option>
+              <option>Family partnerships &amp; engagement</option>
+              <option>Custom lesson plans</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="ct-field ct-full">
+            <label for="ct-message">Your message <span>*</span></label>
+            <textarea id="ct-message" name="message" placeholder="Tell us a little about what you're looking for…" required maxlength="5000"></textarea>
+          </div>
+          <!-- spam trap: real visitors never see or fill this -->
+          <div class="ct-hp" aria-hidden="true">
+            <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          </div>
+        </div>
+        <div class="ct-form-foot">
+          <button type="submit" class="ct-btn" id="ct-submit">Send Message →</button>
+          <span class="ct-note">We keep your details private and only use them to reply to you.</span>
+        </div>
+      </form>
+      <div class="ct-success" id="contact-success">
+        <span class="ct-success-icon">💌</span>
+        <h3>Thank you, your message is on its way!</h3>
+        <p>We've received it and will get back to you as soon as we can. In a hurry? You can also email us at enrichingearlylearning@gmail.com.</p>
+      </div>
+    </div>
+
+    <!-- WHERE WE ARE + HELPFUL LINKS -->
+    <h2>Where to find us</h2>
+    <div class="ct-where">
+      <div>
+        <h3>📍 Based in the Lower Mainland, BC</h3>
+        <p>In-person Belonging Hub sessions are held in the Vancouver / Burnaby area. Coaching and consultations are also available online.</p>
+      </div>
+      <div>
+        <h3>🔎 Looking for answers first?</h3>
+        <p>Browse our <a href="/frequently-asked-questions-faqs/">FAQs</a> or explore <a href="/services/">all of our services</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% include footer.html %}
+
+<script>
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
+    if (window.innerWidth < 900) { e.preventDefault(); this.parentElement.classList.toggle('open'); }
+  });
+});
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var form = this;
+  var btn = document.getElementById('ct-submit');
+
+  /* basic checks (the browser's own pop-ups are off so we can show a friendly message) */
+  var name = form.elements['name'].value.trim();
+  var email = form.elements['email'].value.trim();
+  var message = form.elements['message'].value.trim();
+  if (!name || !email || !message) { alert('Please fill in your name, email and message.'); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert('Please enter a valid email address.'); return; }
+
+  function showThanks() {
+    form.style.display = 'none';
+    document.getElementById('contact-success').style.display = 'block';
+  }
+
+  /* spam trap: if the hidden field was filled, pretend it worked and send nothing */
+  if (form.elements['website'].value) { showThanks(); return; }
+
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+
+  var SB_URL = 'https://yxkqoubatrywgfgexveo.supabase.co';
+  var SB_KEY = 'sb_publishable_mzmlAoJuvfUMpqeF0_7cPQ_wNf5rOjQ';
+
+  var data = {};
+  new FormData(form).forEach(function(v, k) { if (k !== 'website') data[k] = v; });
+  data.name = name; data.email = email; data.message = message;
+
+  var headers = { 'Content-Type': 'application/json', 'apikey': SB_KEY, 'Prefer': 'return=minimal' };
+  if (SB_KEY.indexOf('eyJ') === 0) headers['Authorization'] = 'Bearer ' + SB_KEY;
+
+  fetch(SB_URL + '/rest/v1/contact_messages', {
+    method: 'POST',
+    headers: headers,
+    body: JSON.stringify(data)
+  }).then(function(response) {
+    if (!response.ok) {
+      return response.text().then(function(t) {
+        throw new Error('Error ' + response.status + ' - ' + t.slice(0, 300));
+      });
+    }
+    showThanks();
+  }).catch(function(err) {
+    console.error(err);
+    btn.disabled = false;
+    btn.textContent = 'Send Message →';
+    alert('Sorry, something went wrong. Please try again or email us at enrichingearlylearning@gmail.com\n\nDetails: ' + (err && err.message ? err.message : err));
+  });
+});
+</script>
+</body>
+</html>
